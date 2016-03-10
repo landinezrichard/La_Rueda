@@ -1,0 +1,12 @@
+ul.Tabs#tabsNav
+	li.Tabs-item
+		a.Tabs-itemLink.Tabs--is-selected(data-tab="tab_one")
+			|	LLANTAS
+	li.Tabs-item
+		a.Tabs-itemLink(data-tab="tab_two")
+			|	BATERÍA
+div.Tabs-content#content
+	div#tab_one.Tabs-contentPane.Tabs--is-active
+		include ../FiltroLlantas/template.jade
+	div#tab_two.Tabs-contentPane
+		include ../FiltroBateria/template.jade

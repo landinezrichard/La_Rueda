@@ -15,7 +15,8 @@
 		height 0
 		&--show
 			height auto
-		
+	&-item
+		box-sizing border-box	
 
 			
 	&-link
@@ -27,13 +28,18 @@
 		transition all .3s ease
 		&:hover
 			color $yellow
+			.MainMenu-item
+				border-bottom 2px solid $yellow	
 
 /*Tablet*/
 @media (min-width: 768px)
 	.MainMenu
+		width 76%
+		float right
 		
 		&-list
 			height auto
+			float right
 		&-item
 			display inline-block
 		&-link

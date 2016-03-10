@@ -4,7 +4,10 @@
 
 $white = #FFF
 $full_black = #000
+$transparent_black = rgba(0,0,0,.85)
 $yellow = #F5A118
+$dark_gray = #282828
+$light_gray = #D8D8D8
 
 html
 	width 100%
@@ -24,9 +27,40 @@ img
 a
 	text-decoration none
 
+.MainContent
+	margin-top 3em
+	
+.u-centrar
+	text-align center
+	
+/*Tablet*/
+@media (min-width: 768px)
+	.MainContent
+		margin-top 120px
+		
+	.u-centrar
+		overflow hidden
+		margin 0 auto
+		width 1480px
+		max-width 1480px		
 
 /*HEADER*/
 @import "../components/Header/estilos.styl"
 
 /*MAINMENU*/
 @import "../components/MainMenu/estilos.styl"
+
+/*SLIDERINDEX*/
+@import "../components/SliderIndex/estilos.styl"
+
+/*ASIDEMENU*/
+@import "../components/AsideMenu/estilos.styl"
+
+/*TABS*/
+@import "../components/Tabs/estilos.styl"
+
+/*FILTROLLANTAS*/
+@import "../components/FiltroLlantas/estilos.styl"
+
+/*FOOTER*/
+@import "../components/Footer/estilos.styl"

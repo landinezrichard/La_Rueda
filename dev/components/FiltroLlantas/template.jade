@@ -1,0 +1,72 @@
+div.FiltroLlantas
+	form.FiltroLlantas-form
+		label.FiltroLlantas-label
+			|	Buscar por llantas
+		div.select
+			select.FiltroLlantas-select(name="marca")
+				option.FiltroLlantas-option(value="")
+					|	MARCA
+				option.FiltroLlantas-option(value="Michelin")
+					|	Michelin
+				option.FiltroLlantas-option(value="Goodyear")
+					|	Goodyear
+				option.FiltroLlantas-option(value="Llantabien")
+					|	Llantabien
+		div.select
+			select.FiltroLlantas-select(name="modelo")
+				option.FiltroLlantas-option(value="")
+					|	MODELO
+				option.FiltroLlantas-option(value="LOREM")
+					|	LOREM
+				option.FiltroLlantas-option(value="IMPSUM")
+					|	IMPSUM
+				option.FiltroLlantas-option(value="ALGO")
+					|	ALGO
+		div.select
+			select.FiltroLlantas-select(name="linea")
+				option.FiltroLlantas-option(value="")
+					|	LÍNEA
+				option.FiltroLlantas-option(value="Grande")
+					|	Grande
+				option.FiltroLlantas-option(value="Mediana")
+					|	Mediana
+				option.FiltroLlantas-option(value="Pequeña")
+					|	Pequeña
+		a.FiltroLlantas-button(href="")
+			|	VER RESULTADOS
+
+	form.FiltroLlantas-formDimension
+		label.FiltroLlantas-label
+			|	Buscar llantas por dimensión
+		div.select--linea
+			select.FiltroLlantas-selectDimension(name="marca")
+				option.FiltroLlantas-option(value="")
+					|	ANCHO
+				option.FiltroLlantas-option(value="33cm")
+					|	33cm
+				option.FiltroLlantas-option(value="50mm")
+					|	50mm
+				option.FiltroLlantas-option(value="10pulg")
+					|	10pulg
+		div.select--linea
+			select.FiltroLlantas-selectDimension(name="modelo")
+				option.FiltroLlantas-option(value="")
+					|	PERFIL
+				option.FiltroLlantas-option(value="Clasico")
+					|	Clasico
+				option.FiltroLlantas-option(value="Sport")
+					|	Sport
+				option.FiltroLlantas-option(value="De Serie")
+					|	De Serie
+		div.select--linea
+			select.FiltroLlantas-selectDimension(name="linea")
+				option.FiltroLlantas-option(value="")
+					|	RIN
+				option.FiltroLlantas-option(value="14pulg")
+					|	14pulg
+				option.FiltroLlantas-option(value="15pulg")
+					|	15pulg
+				option.FiltroLlantas-option(value="16pulg")
+					|	16pulg
+		a.FiltroLlantas-button(href="")
+			|	VER RESULTADOS

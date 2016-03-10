@@ -1,0 +1,86 @@
+.Tabs
+	// overflow hidden
+	width 100%
+	margin 0
+	padding 0
+	list-style none
+	text-align center
+	margin-bottom 1.5rem
+	font-size 0
+	position relative
+	transition all .3s ease
+	
+	&-item
+		display inline-block
+		margin 0 0
+		font-size 1.56rem
+		
+	
+	&-itemLink
+		cursor pointer
+		position relative
+		padding .5em
+		float left
+		text-decoration none
+		color $white
+		border-bottom 3px solid $white
+		font-size 1.56rem
+		
+		&:after
+			content ""
+			border-left 7px solid transparent
+			border-right 7px solid transparent
+			border-top 9px solid $white
+			display inline-block
+			position absolute
+			top 65px
+			left 45px
+
+		// &:hover
+		// &:focus
+		// 	color $yellow
+		// 	border-bottom 3px solid $yellow
+			
+		// 	.Tabs-itemLink
+		// 		&:after
+		// 			content ""
+		// 			border-left 7px solid transparent
+		// 			border-right 7px solid transparent
+		// 			border-top 9px solid $yellow
+		// 			display inline-block
+		// 			position absolute
+		// 			top 65px
+		// 			left 80px
+				
+		&:focus
+			outline 0
+			
+	&-contentPane
+		display none
+	&--is-active
+		display block
+
+	&--is-selected
+		color $yellow
+		border-bottom 3px solid $yellow
+		
+		&:after
+			content ""
+			border-left 7px solid transparent
+			border-right 7px solid transparent
+			border-top 9px solid $yellow
+			display inline-block
+			position absolute
+			top 65px
+			left 45px
+/*Tablet*/
+@media (min-width: 768px)
+	.Tabs
+		&-itemLink			
+			padding .5em 1.9em
+			
+			&:after				
+				left 80px
+		&--is-selected			
+			&:after				
+				left 80px
