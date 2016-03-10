@@ -1,0 +1,23 @@
+header.Header
+	div.Header-container
+		div.Header-logo
+			|	Logo
+		div.Header-right
+			div.Header-subMenu--mobile
+				a(href="#").Header-cotizadorButton
+					|	Cotizador
+				button.Header-contactoButton(type='button')
+					|	Con
+				button#showMenu.Header-menuButton(type='button')
+					|	Men
+			div.Header-subMenu--desktop
+				a.Header-about
+					|	La Rueda
+				a(href="#").Header-cotizadorButton
+					|	Cotizador...
+				div.Header-contacto
+					|	Comunicate
+					span.Header-icon
+					span.Header-tel
+						|	311 5416067
+			include ../MainMenu/template.jade

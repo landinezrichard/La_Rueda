@@ -1,0 +1,40 @@
+/*MAINMENU*/
+
+.MainMenu
+	line-height 1.2em
+	display inline-block
+	width 100%
+	&-list
+		background-color $full_black		
+		list-style none		
+		margin 0
+		// margin-top 1em
+		padding 0		
+		transition height .3s ease
+		overflow hidden
+		height 0
+		&--show
+			height auto
+		
+
+			
+	&-link
+		font-size 1.06em
+		color $white
+		padding 1.5em
+		display block
+		text-transform uppercase
+		transition all .3s ease
+		&:hover
+			color $yellow
+
+/*Tablet*/
+@media (min-width: 768px)
+	.MainMenu
+		
+		&-list
+			height auto
+		&-item
+			display inline-block
+		&-link
+			display inline-block

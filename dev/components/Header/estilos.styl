@@ -1,0 +1,61 @@
+/*HEADER*/
+
+.Header
+	background-color $full_black
+	color $white
+	position fixed
+	top 0
+	left 0
+	width 100%
+	z-index 10
+	// overflow hidden
+	height 3em
+	line-height 2.5em
+	
+	&-logo
+		display inline-block
+		float left
+		margin-left 1em
+		
+	&-subMenu--mobile
+		display inline-block
+		float right
+		margin-right .5em
+		
+	&-cotizadorButton
+		text-decoration none
+		text-transform uppercase
+		color $yellow
+		border 1px solid $yellow
+		font-weight 700
+		font-size 1em
+		padding .3em 1em
+
+	&-subMenu--desktop
+		display none
+	&-about	
+	&-contacto
+		display inline-block
+
+/*Tablet*/
+
+@media (min-width: 768px)
+	.Header
+		&-container
+			width 1100px
+			max-width 1480px 
+			margin 0 auto
+		&-logo			
+			float left
+			
+		&-right
+			float right
+		&-subMenu--mobile
+			display none
+		&-subMenu--desktop
+			display inline-block
+			float right	
+			
+		&-about
+			color $white
+			text-transform uppercase 
