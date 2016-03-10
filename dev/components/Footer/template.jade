@@ -1,14 +1,45 @@
 footer.Footer
-	div.Footer-white
+	div.u-centrar
 		h2.Footer-title
 			|	NUESTRAS
 			span.Footer-regular
 				|	MARCAS
 		div.Footer-border
-		figure.Footer-marca
-			img.Footer-marcaImage(src="../images/continental-logo.png")
-		figure.Footer-marca
-			img.Footer-marcaImage(src="../images/generaltire-logo.png")
-		figure.Footer-marca
-			img.Footer-marcaImage(src="../images/barum-logo.png")
+		div.Footer-marca
+			figure.Footer-marcaImageContainer
+				img.Footer-marcaImage(src="../images/continental-logo.png")
+			figure.Footer-marcaImageContainer
+				img.Footer-marcaImage(src="../images/generaltire-logo.png")
+			figure.Footer-marcaImageContainer
+				img.Footer-marcaImage(src="../images/barum-logo.png")
 	div.Footer-black
+		div.u-centrar
+			div.Footer-margin
+				nav.MainMenu--footer
+					ul.MainMenu-list--footer
+						- var menuData = [{"url":"","description":"La Rueda"},{"url":"","description":"Centros de Servicio"},{"url":"","description":"Servicios"},{"url":"","description":"Llantas"},{"url":"","description":"Aceites"},{"url":"","description":"Novedades - Tips"},{"url":"","description":"Consejos Útiles"}]
+						each val in menuData
+							li.MainMenu-item--footer
+								a.MainMenu-link--footer(href=''+val.url)
+									|	#{val.description}
+				div.Footer-central
+					h3.Footer-tel
+						|	COMUNÍCATE
+						span.Footer-telIcon
+							|	tel
+						|	311 5416067
+					img(src="../images/borde-dotted.png")
+					p.Footer-contacto
+						|	si tienes alguna duda sobre nuestros servicios
+					a.Footer-contactoButton(href="")
+						|	CONTÁCTANOS
+				nav.RedesMenu--footer
+					ul.RedesMenu-list--footer
+						- var menuData = [{"url":"","description":"facebook"},{"url":"","description":"twitter"},{"url":"","description":"google+"},{"url":"","description":"rss"},{"url":"","description":"blogger"}]
+						each val in menuData
+							li.RedesMenu-item--footer
+								a.RedesMenu-link--footer(href=''+val.url)
+									|	#{val.description}
+				div.Footer-copy
+					h4.Footer-copyText
+						|	Todos los derechos reservados La Rueda 2016. Posicionamiento seo y desarrollo de página web por paxzu

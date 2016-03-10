@@ -3,9 +3,63 @@
 	&-title
 		font-weight 300
 		font-size 2.56em
+		margin 0
+		margin-top 1em
 	&-regular
 		font-weight 400
 	&-border
 		width 358px
 		height 3px
 		background-color $light_gray
+		display inline-block
+	&-marca
+		margin 1em 0 2em
+	&-marcaImageContainer
+		display inline-block
+	&-black
+		background-color $dark_gray
+	&-margin
+		margin-top 1.5em
+		
+	&-central
+		display none
+		margin 1em
+		text-align center
+
+	&-tel
+		font-weight 300
+		font-size 1.8em
+		color $yellow
+		display inline-block
+		margin 0
+	
+	&-contacto
+		color $white
+		font-weight 300
+		font-size 1.56em
+		border
+		display inline-block
+		margin 1em 0 .5em 
+	&-contactoButton
+		color $white
+		border 1px solid $yellow
+		font-weight 300
+		font-size 1.75em
+		padding .5em 1em
+		display inline-block
+	&-copy
+		clear both
+	&-copyText
+		color $white
+		font-weight 300
+		font-size 1em
+/*Tablet*/
+@media (min-width: 768px)
+	.Footer
+		&-margin
+			margin-top 3em
+		&-central
+			display inline-block
+			width 420px
+		&-contactoButton
+			padding .5em 4.4em

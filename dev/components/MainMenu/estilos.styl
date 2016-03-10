@@ -10,11 +10,17 @@
 		margin 0
 		// margin-top 1em
 		padding 0		
-		transition height .3s ease
-		overflow hidden
+		transition height .3s ease		
 		height 0
+		overflow-x hidden
+		overflow-y scroll
+		position fixed
+		top 3em
+		left 0
+		right 0
+		
 		&--show
-			height auto
+			height 90%
 	&-item
 		box-sizing border-box	
 
@@ -29,7 +35,9 @@
 		&:hover
 			color $yellow
 			.MainMenu-item
-				border-bottom 2px solid $yellow	
+				border-bottom 2px solid $yellow
+	&--footer
+		display none
 
 /*Tablet*/
 @media (min-width: 768px)
@@ -38,9 +46,30 @@
 		float right
 		
 		&-list
+			position relative
+			overflow hidden
 			height auto
 			float right
+			top 0
+			right 0
 		&-item
 			display inline-block
 		&-link
 			display inline-block
+			
+		&--footer
+			display inline-block
+			float left
+			width 200px
+			margin 1em
+			
+		&-list--footer
+			list-style none
+			text-align left
+			padding 0
+		&-item--footer
+			margin 0.75em 0
+		&-link--footer
+			color $white
+			font-weight 300
+			font-size 1.01em

@@ -1,16 +1,50 @@
-#cont_general_redes {
-    width: 100%;
-    height: auto;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 8;
-    text-align: center;
+/*REDESMENU*/
+.RedesMenu
+	&--footer
+		display inline-block
+	&-list--footer
+		list-style none
+		padding 0
+	&-item--footer
+		margin 0.75em .5em
+		border-bottom 1px dotted $yellow
+		display inline-block
+	&-link--footer
+		color $yellow 
 
-.btn_red {
-    width: auto;
-    height: auto;
-    float: right;
-    font-family: 'icomoon';
-    font-size: 18px;
-    color: #FFF;
+/*Tablet*/
+@media (min-width: 768px)
+	.RedesMenu
+		&--footer
+			display inline-block
+			float right
+			width 200px
+			margin 1em
+		&-list--footer
+			text-align left
+		&-item--footer
+			margin 0.75em 0
+			width 151px
+		&-link--footer			
+			font-weight 300
+			font-size 1.02em
+			padding .3em 0
+			display block
+
+
+// #cont_general_redes {
+//     width: 100%;
+//     height: auto;
+//     position: fixed;
+//     bottom: 0;
+//     right: 0;
+//     z-index: 8;
+//     text-align: center;
+
+// .btn_red {
+//     width: auto;
+//     height: auto;
+//     float: right;
+//     font-family: 'icomoon';
+//     font-size: 18px;
+//     color: #FFF;
