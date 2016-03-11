@@ -6,13 +6,36 @@ section.IndexRight
 				|	INGRESA AQUÍ
 			p.IndexRight-text
 				|	y revisa el estado de tu vehículo
+		span.icon-chevron-thin-right.IndexRight-flecha
+		span.icon-angle-down.IndexRight-flecha--mobile
 		form.IndexRight-form
-			input.IndexRight-input(type="text", name="nit", placeholder="C.C. / NIT")
-			input.IndexRight-input(type="password", name="pass", placeholder="CONTRASEÑA")
+			fieldset.IndexRight-field
+				input.IndexRight-input(type="text", name="nit", placeholder="C.C. / NIT")
+				input.IndexRight-input(type="password", name="pass", placeholder="CONTRASEÑA")
 			input.IndexRight-button(type="submit", name="entrar", value="ENTRAR")
 	div.IndexRight-centros
-		h2.IndexRight-centrosTitle
-			|	CONOCE NUESTROS 13
-			span.IndexRight-centrosBold
-				|	CENTROS DE SERVICIO
-		div.IndexRight-centrosBorde
+		div.IndexRight-centrosTitleContainer
+			h2.IndexRight-centrosTitle
+				|	CONOCE NUESTROS 13
+				span.IndexRight-centrosRegular
+					|	CENTROS DE SERVICIO
+			div.IndexRight-centrosBorde
+		div.IndexRight-centrosSlider
+			figure.IndexRight-centrosImageContainer
+				img.IndexRight-centrosImage(src="../images/centros.jpg")
+			figure.IndexRight-centrosImageContainer
+				img.IndexRight-centrosImage(src="../images/mapa-hover.jpg")
+				div.IndexRight-centrosShadow
+					div.IndexRight-centrosShadowText
+						h4.IndexRight-centrosShadowBold
+							|	PPSierra Cll 116 # 70F - 16
+							span.IndexRight-centrosShadowLight
+								|	/PBX 2530689
+						h4.IndexRight-centrosShadowBold
+							span.IndexRight-centrosShadowLight
+								|	ASESOR: 
+							|	RICARDO LANDÍNEZ
+						a.IndexRight-centrosShadowButton(href="")
+							span.IndexRight-centrosShadowButtonText
+								|	VER MAPA
+							span.icon-chevron-thin-right.IndexRight-centrosShadowButtonIcon

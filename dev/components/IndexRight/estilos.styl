@@ -4,9 +4,11 @@
 	float left
 	&-ingreso
 		background-color $light_gray3
+		margin-top 1.06em
 	&-ingresoLeft
 		display inline-block
 		vertical-align middle
+		margin-left 1em
 	&-textBold
 		margin .6em 0 0
 		color $black
@@ -20,17 +22,26 @@
 		font-weight 300
 		font-size 1.56em
 		color $dark_gray2
-		
+	
+	&-flecha--mobile
+	&-flecha
+		font-size 3em
+		vertical-align middle
+	&-flecha
+		display none
 	&-form
 		display inline-block
-		background-color $dark_gray3
-		height 90px
-		line-height 90px
+		background-color $dark_gray3		
 		vertical-align middle
+	&-field
+		display inline-block
+		margin 0
+		padding 0
+		border 0
 	&-input
 		border 1px solid $white
 		background-color transparent
-		margin 1em
+		margin .7em
 		color $white
 		font-weight 700
 		font-size 0.94em
@@ -44,5 +55,99 @@
 		font-weight 700
 		font-size 1.32em
 		padding 0 1.7em
+		
+	&-centros
+		text-align left
+	&-centrosTitleContainer		
+		display inline-block
+		margin 1em 0
 	&-centrosTitle
 		margin 1em .5em 0
+		font-weight 300
+		font-size 2em
+	&-centrosRegular
+		font-weight 400
+	&-centrosBorde
+		background-color $light_gray
+		width 95%
+		height 3px
+		display inline-block
+		margin-left .5em
+	&-centrosSlider
+		text-align center
+	&-centrosImageContainer
+		margin 0
+		display inline-block		
+		vertical-align middle
+		position relative		
+		
+	&-centrosShadow
+		position absolute
+		top 0
+		bottom 0
+		// width 482px
+		// height 331px
+		width 100%
+		height 100%
+		background-color $transparencia
+		text-align center
+		transition all 1s ease
+		
+		&:hover
+			background-color transparent
+			
+			.IndexRight-centrosShadowBold
+				display none
+	&-centrosShadowText
+		position absolute
+		bottom 0
+		right 0
+		left 0
+		// margin-top 10%
+	&-centrosShadowBold
+		font-weight 700
+		font-size 1.56em
+		color white
+		margin 0
+		transition all .3s ease		
+	&-centrosShadowLight
+		font-weight	300	
+	&-centrosShadowButton
+		color $white
+		background-color $full_black
+		border 2px solid $yellow
+		padding .7em 2em .7em 2.5em
+		display inline-block
+		margin .5em	0
+	&-centrosShadowButtonText
+		font-weight 400
+		font-size 1.56em
+		vertical-align middle
+		// line-height 54px
+		
+	&-centrosShadowButtonIcon
+		vertical-align middle
+		font-size 1.58em
+		margin-left .5em
+		
+		
+/*Tablet*/
+@media (min-width: 768px)
+	.IndexRight
+		&-flecha--mobile
+			display none
+		&-flecha
+			display inline-block
+		&-form			
+			height 90px
+			line-height 90px
+		&-centrosTitleContainer
+			line-height 1.2em
+		&-centrosBorde
+			width 744px
+			
+		&-centrosImageContainer
+			float left
+			height 331px			
+		// &-centrosShadowText
+		// 	margin-top 35%

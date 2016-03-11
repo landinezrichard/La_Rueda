@@ -22,8 +22,11 @@
 		&--show
 			height 90%
 	&-item
-		box-sizing border-box	
-
+		box-sizing border-box
+		transition all .3s ease
+		border-bottom 0 solid $yellow
+		&:hover
+			border-bottom 2px solid $yellow
 			
 	&-link
 		font-size 1.06em
@@ -34,8 +37,8 @@
 		transition all .3s ease
 		&:hover
 			color $yellow
-			.MainMenu-item
-				border-bottom 2px solid $yellow
+			// .MainMenu-item
+			// 	border-bottom 2px solid $yellow
 	&--footer
 		display none
 
@@ -44,6 +47,7 @@
 	.MainMenu
 		line-height inherit		
 		float right
+		margin-top 1.2em
 		
 		&-list
 			background-color transparent
@@ -54,9 +58,10 @@
 			top 0
 			right 0
 		&-item
-			display inline-block
+			display inline-block			
 		&-link
 			display inline-block
+			padding 1em 2.1em 0
 			
 		&--footer
 			display inline-block
