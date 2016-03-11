@@ -6,7 +6,7 @@ header.Header
 			div.Header-subMenu--mobile
 				a(href="#").Header-cotizadorButton
 					|	Cotizador
-				button.Header-contactoButton(type='button')
+				button.Header-contactoButton#contactoButton(type='button')
 					span.Header-contactoIcon.icon-wa
 						span.path1
 						span.path2
@@ -29,3 +29,12 @@ header.Header
 					span.Header-tel
 						|	311 5416067
 			include ../MainMenu/template.jade
+			div.Header-contacto--mobile#contacto-mobile
+					span.Header-contactoText
+						|	Comunícate
+					span.Header-contactoIcon.icon-wa
+						span.path1
+						span.path2
+						span.path3
+					span.Header-tel
+						|	311 5416067

@@ -75,6 +75,7 @@
 		margin-left .5em
 	&-centrosSlider
 		text-align center
+		overflow hidden
 	&-centrosImageContainer
 		margin 0
 		display inline-block		
@@ -129,7 +130,34 @@
 		vertical-align middle
 		font-size 1.58em
 		margin-left .5em
+/*estilos OWL*/
+.centrosSlider	
+	width 560px !important
+.centrosSlider.owl-carousel.owl-theme .owl-controls.clickable
+		position absolute
+		bottom 15px
+		left 0
+		right 0
+		margin 0 auto
+		max-width 1480px
 		
+.centrosSlider.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons div
+	width 35px
+	height 35px
+	line-height 35px
+	border-radius 50%	
+	padding 7px
+	background-color $transparent_white
+	border 2px solid $white
+	font-size 2.5em
+	text-align center
+	
+	
+.centrosSlider.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-prev
+	float left
+	
+.centrosSlider.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-next
+	float right
 		
 /*Tablet*/
 @media (min-width: 768px)
@@ -148,6 +176,7 @@
 			
 		&-centrosImageContainer
 			float left
-			height 331px			
-		// &-centrosShadowText
-		// 	margin-top 35%
+			height 330px
+	/*estilos OWL*/
+	.centrosSlider
+		width 1041px !important

@@ -41,7 +41,8 @@ var paths = {
   js:{
     main  : 'dev/app.js',
     watch : 'dev/**/*.js',
-    dest  : 'public/js/'
+    dest  : 'public/js/',
+    other : 'dev/js/*.js'
   },
   images:{
     watch : ['dev/assets/**/*.png','dev/assets/**/*.jpg','dev/assets/**/*.gif','dev/assets/**/*.jpeg'],
@@ -103,9 +104,9 @@ gulp.task('build-html', function() {
 });
 
 /*
-* Tarea build-js
+* Tarea bundle-js
 */
-gulp.task('build-js', function() {
+gulp.task('bundle-js', function() {
   return browserify({
     entries: paths.js.main, //punto de entrada js
     debug: true, 
@@ -117,8 +118,17 @@ gulp.task('build-js', function() {
   .pipe(buffer())
   .pipe(uglify())//minificamos js
   .on('error', gutil.log)
-  .pipe(gulp.dest(paths.js.dest))//en donde va a estar el archivo destino
+  .pipe(gulp.dest(paths.js.dest))//en donde va a estar el archivo destino  
 });
+
+/*Copiar JS*/
+gulp.task('copy-js', function(){
+  return gulp.src(paths.js.other)
+    .pipe(gulp.dest(paths.js.dest));
+});
+
+/*Build-js*/
+gulp.task('build-js', ['bundle-js','copy-js']);
 
 /*
 * Tarea Minificar y Optimizar imagenes

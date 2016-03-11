@@ -47,6 +47,12 @@
 	&--contactoIcon
 	&-tel
 		margin 0 .5em
+	&-contacto--mobile
+		position absolute
+		top 3em
+		left 30%
+		background-color $transparent_black
+		display none
 
 /*Tablet*/
 
@@ -72,8 +78,7 @@
 			display none
 		&-subMenu--desktop
 			display inline-block
-			float right
-			
+			float right			
 			
 		&-about
 			color $white
@@ -90,4 +95,5 @@
 			text-transform uppercase
 			font-weight 300
 			font-size 1.16em
-		
+		&-contacto--mobile
+			display none !important

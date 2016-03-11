@@ -6,6 +6,7 @@
 @import "iconfonts.styl"
 
 $white = #FFF
+$transparent_white = rgba(255,255,255,.20)
 $full_black = #000
 $transparent_black = rgba(0,0,0,.85)
 $yellow = #F5A118
@@ -43,14 +44,31 @@ option
 .u-centrar
 	text-align center
 	overflow hidden
+
+/*BOTON DE CHAT*/	
+.Chat
+	position fixed
+	right 0
+	bottom 16px
+	&-button
+		color $white
+		background-color $yellow
+		padding 1em
+	&-icon
+		margin-right .5em
+	&-text
+		display none
 	
 /*Tablet*/
 @media (min-width: 768px)			
 	.u-centrar		
 		margin 0 auto
 		width 1480px
-		max-width 1480px		
-
+		max-width 1480px
+		
+	.Chat		
+		&-text
+			display inline-block
 /*HEADER*/
 @import "../components/Header/estilos.styl"
 
@@ -77,3 +95,7 @@ option
 
 /*FOOTER*/
 @import "../components/Footer/estilos.styl"
+
+/*Estilos OWL CAROUSEL*/
+@import "../lib/owl-carousel/owl-carousel.styl"
+@import "../lib/owl-carousel/owl-theme.styl"
