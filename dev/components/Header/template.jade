@@ -1,23 +1,31 @@
 header.Header
 	div.Header-container
 		div.Header-logo
-			|	Logo
+			include ../Logo/template.jade
 		div.Header-right
 			div.Header-subMenu--mobile
 				a(href="#").Header-cotizadorButton
 					|	Cotizador
 				button.Header-contactoButton(type='button')
-					|	Con
+					span.Header-contactoIcon.icon-wa
+						span.path1
+						span.path2
+						span.path3
 				button#showMenu.Header-menuButton(type='button')
-					|	Men
+					span.icon-menu
 			div.Header-subMenu--desktop
 				a.Header-about
 					|	La Rueda
 				a(href="#").Header-cotizadorButton
 					|	Cotizador...
+					span.icon-chevron-thin-right
 				div.Header-contacto
-					|	Comunícate
-					span.Header-icon
+					span.Header-contactoText
+						|	Comunícate
+					span.Header-contactoIcon.icon-wa
+						span.path1
+						span.path2
+						span.path3
 					span.Header-tel
 						|	311 5416067
 			include ../MainMenu/template.jade

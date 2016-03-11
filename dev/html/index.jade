@@ -7,10 +7,11 @@ html(lang="es")
 			|	La Rueda
 		link(rel="stylesheet", type="text/css", href="../css/estilos.css")
 	body
+		include ../components/RedesMenu/template.jade
 		include ../components/Header/template.jade
-		div.MainContent
-			include ../components/SliderIndex/template.jade
+		include ../components/SliderIndex/template.jade
 		div.u-centrar
 			include ../components/AsideMenu/template.jade
+			include ../components/IndexRight/template.jade
 		include ../components/Footer/template.jade
 		script(type="text/javascript", src="../js/app.js")

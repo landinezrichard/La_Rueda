@@ -2,12 +2,19 @@
 @import "normalize.styl"
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,300,700')
 
+/*ICONOS COMO FUENTES*/
+@import "iconfonts.styl"
+
 $white = #FFF
 $full_black = #000
 $transparent_black = rgba(0,0,0,.85)
 $yellow = #F5A118
 $dark_gray = #282828
+$dark_gray2 = #3A3A3A
+$dark_gray3 = #474747
 $light_gray = #D8D8D8
+$light_gray2 = #B5B5B5
+$light_gray3 = #EFEFEF
 
 html
 	width 100%
@@ -26,19 +33,16 @@ img
 
 a
 	text-decoration none
-
-.MainContent
-	margin-top 3em
+	
+option
+	font-weight regular !important
 	
 .u-centrar
 	text-align center
 	overflow hidden
 	
 /*Tablet*/
-@media (min-width: 768px)
-	.MainContent
-		margin-top 120px
-		
+@media (min-width: 768px)			
 	.u-centrar		
 		margin 0 auto
 		width 1480px
@@ -61,6 +65,9 @@ a
 
 /*FILTROLLANTAS*/
 @import "../components/FiltroLlantas/estilos.styl"
+
+/*INDEXRIGHT*/
+@import "../components/indexRight/estilos.styl"
 
 /*REDESMENU*/
 @import "../components/RedesMenu/estilos.styl"

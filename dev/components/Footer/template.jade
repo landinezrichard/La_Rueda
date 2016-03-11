@@ -25,21 +25,36 @@ footer.Footer
 				div.Footer-central
 					h3.Footer-tel
 						|	COMUNÍCATE
-						span.Footer-telIcon
-							|	tel
+						span.Footer-telIcon.icon-tel
 						|	311 5416067
 					img(src="../images/borde-dotted.png")
 					p.Footer-contacto
 						|	si tienes alguna duda sobre nuestros servicios
 					a.Footer-contactoButton(href="")
 						|	CONTÁCTANOS
+						span.Footer-cuadro.icon-chevron-thin-right
 				nav.RedesMenu--footer
 					ul.RedesMenu-list--footer
-						- var menuData = [{"url":"","description":"facebook"},{"url":"","description":"twitter"},{"url":"","description":"google+"},{"url":"","description":"rss"},{"url":"","description":"blogger"}]
-						each val in menuData
-							li.RedesMenu-item--footer
-								a.RedesMenu-link--footer(href=''+val.url)
-									|	#{val.description}
+						li.RedesMenu-item--footer
+							a.RedesMenu-link--footer(href='')
+								span.icon-facebook.RedesMenu--footerIcons
+								|	facebook
+						li.RedesMenu-item--footer
+							a.RedesMenu-link--footer(href='')
+								span.icon-twitter.RedesMenu--footerIcons
+								|	twitter
+						li.RedesMenu-item--footer
+							a.RedesMenu-link--footer(href='')
+								span.icon-google-plus.RedesMenu--footerIcons
+								|	google+
+						li.RedesMenu-item--footer
+							a.RedesMenu-link--footer(href='')
+								span.icon-rss.RedesMenu--footerIcons
+								|	rss
+						li.RedesMenu-item--footer
+							a.RedesMenu-link--footer(href='')
+								span.icon-blogger.RedesMenu--footerIcons
+								|	blogger
 				div.Footer-copy
 					h4.Footer-copyText
 						|	Todos los derechos reservados La Rueda 2016. Posicionamiento seo y desarrollo de página web por paxzu

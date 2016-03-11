@@ -1,7 +1,7 @@
 /*HEADER*/
 
 .Header
-	background-color $full_black
+	background-color $transparent_black
 	color $white
 	position fixed
 	top 0
@@ -15,7 +15,10 @@
 	&-logo
 		display inline-block
 		float left
-		margin-left 1em
+		margin-left 1em		
+		
+		& .Logo-link
+			font-size 3em
 		
 	&-subMenu--mobile
 		display inline-block
@@ -30,12 +33,20 @@
 		font-weight 700
 		font-size 1em
 		padding .3em 1em
+	&-contactoButton	
+	&-menuButton
+		border none
+		background-color transparent
 
 	&-subMenu--desktop
 		display none
 	&-about	
 	&-contacto
 		display inline-block
+	&-contactoText
+	&--contactoIcon
+	&-tel
+		margin 0 .5em
 
 /*Tablet*/
 
@@ -48,9 +59,15 @@
 			margin 0 auto
 		&-logo			
 			float left
+			width 175px
+			height 120px
+			
+			& .Logo-link
+				font-size 7.5em
 			
 		&-right
 			float right
+			width 1288px
 		&-subMenu--mobile
 			display none
 		&-subMenu--desktop

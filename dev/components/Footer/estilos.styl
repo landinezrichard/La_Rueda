@@ -32,6 +32,8 @@
 		color $yellow
 		display inline-block
 		margin 0
+	&-telIcon
+		margin 0 .6em
 	
 	&-contacto
 		color $white
@@ -47,12 +49,24 @@
 		font-size 1.75em
 		padding .5em 1em
 		display inline-block
+		position relative
+	&-cuadro
+		background-color $yellow
+		color $dark_gray
+		position absolute
+		right 0
+		top 0
+		width 69px
+		height 69px
+		line-height 69px
+		font-size 1.6em
 	&-copy
 		clear both
 	&-copyText
-		color $white
+		color $light_gray2
 		font-weight 300
 		font-size 1em
+		
 /*Tablet*/
 @media (min-width: 768px)
 	.Footer

@@ -1,3 +1,31 @@
+/*REDES MENU FIXED*/
+.Redes
+	display none
+/*Tablet*/
+@media (min-width: 768px)
+	.Redes
+		display block
+		position fixed
+		left 10px
+		top 40%
+		z-index 11
+		&-link
+			width 40px
+			height 40px
+			display block
+			background-color $yellow
+			color $white
+			text-align center
+			font-size 1.6em
+			margin .3em 0
+			padding 0 .1em
+			border-radius 50%
+		&-icons
+			&.icon-google-plus
+				font-size 1.4rem
+			&.icon-blogger
+				font-size 1.2rem
+
 /*REDESMENU*/
 .RedesMenu
 	&--footer
@@ -30,21 +58,7 @@
 			font-size 1.02em
 			padding .3em 0
 			display block
-
-
-// #cont_general_redes {
-//     width: 100%;
-//     height: auto;
-//     position: fixed;
-//     bottom: 0;
-//     right: 0;
-//     z-index: 8;
-//     text-align: center;
-
-// .btn_red {
-//     width: auto;
-//     height: auto;
-//     float: right;
-//     font-family: 'icomoon';
-//     font-size: 18px;
-//     color: #FFF;
+		&--footerIcons
+			margin-right 1em
+			&.icon-google-plus
+				margin-right .7em
