@@ -33,4 +33,10 @@ $(document).ready(function() {
 			$(this).html(arrow_der);
 	});
 
+	$('.flexslider').flexslider({
+	    animation: "slide",
+	    controlsContainer: $(".custom-controls-container"),
+	    customDirectionNav: $(".custom-navigation a")
+	});
+
 });

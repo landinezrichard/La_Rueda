@@ -1,0 +1,49 @@
+/*LINEAS PRODUCTO*/
+
+.LineasProd
+	
+	&-title
+		font-weight 400
+		font-size 2.56em
+		margin 0
+		
+	&-borde
+		width 471px
+		height 3px
+		background-color $light_gray
+		display inline-block
+		
+	&-link
+		display inline-block
+		cursor pointer
+		// margin 0 1em
+		
+	&-imageContainer
+		margin 0 1em
+		position relative
+		width 388px
+		height 248px
+		display inline-block
+	&-shadow
+		position absolute
+		top 0
+		left 0		
+		width 100%
+		height 100%
+		background-color $transparencia
+		text-align center
+		transition all 1s ease
+		
+		&:hover
+			background-color transparent
+	&-shadowText
+		position absolute
+		bottom 10%
+		right 0
+		left 0
+	&-button
+		font-weight 400
+		font-size 1.69em
+		color $white
+		border-bottom 3px solid $yellow
+		padding 0 1.2em
