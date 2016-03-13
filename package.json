@@ -27,6 +27,7 @@
     "jade": "^1.11.0",
     "jadeify": "^4.6.0",
     "nib": "^1.1.0",
+    "remodal": "^1.0.6",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },

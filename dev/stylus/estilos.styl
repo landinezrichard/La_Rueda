@@ -13,6 +13,8 @@ $yellow = #F5A118
 $dark_gray = #282828
 $dark_gray2 = #3A3A3A
 $dark_gray3 = #474747
+$dark_gray4 = #3F3F3F
+$dark_gray5 = #444444
 $light_gray = #D8D8D8
 $light_gray2 = #B5B5B5
 $light_gray3 = #EFEFEF
@@ -96,39 +98,44 @@ option
 /*LINEASPRODUCTO*/
 @import "../components/LineasProd/estilos.styl"
 
+/*DESTACADOS*/
+@import "../components/Destacados/estilos.styl"
+
 /*FOOTER*/
 @import "../components/Footer/estilos.styl"
+
+/*VENTANA MODAL CARACTERISTICAS*/
+@import "../components/modal/estilos.styl"
+
+@import "../components/modal/remodal.styl"
+@import "../components/modal/remodal-default-theme.styl"
 
 /*Estilos OWL CAROUSEL*/
 @import "../lib/owl-carousel/owl-carousel.styl"
 @import "../lib/owl-carousel/owl-theme.styl"
 
-.flexslider {
-	margin-bottom: 10px;
-}
 
-.flex-control-nav {
-	position: relative;
-	bottom: auto;
-}
+/*Estilos Flex Slider*/
+.flexslider
+	margin-bottom 10px
 
-.custom-navigation {
-	display: table;
-	width: 100%;
-	table-layout: fixed;
-}
+.flex-control-nav
+	position relative
+	bottom auto
 
-.custom-navigation > * {
-	display: table-cell;
-}
+.custom-navigation
+	display table
+	width 100%
+	table-layout fixed
 
-.custom-navigation > a {
-	width: 50px;
-}
+.custom-navigation > * 
+	display table-cell
 
-.custom-navigation .flex-next {
-	text-align: right;
-}
+.custom-navigation > a
+	width 50px
+
+.custom-navigation .flex-next
+	text-align right
 
 .custom-controls-container
 	display none
