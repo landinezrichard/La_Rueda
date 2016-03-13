@@ -1,0 +1,44 @@
+/*FEATUREINDEX*/
+
+.FeatureIndex
+	margin 3em 0
+	overflow hidden
+	&-imageContainer
+		margin 0
+		display inline-block
+		
+	&-image1
+		max-width 434px
+	&-image2
+		max-width 523px
+	&-text
+		display inline-block
+		background-color $full_black
+		max-width 523px
+		min-height 273px
+		
+	&-imageContainer	
+	&-text
+		vertical-align middle
+	&-description
+		font-weight 300
+		font-size 1.56em
+		color $white
+		margin 1em
+	&-button	
+		font-weight 400
+		font-size 1.65em
+		color $white
+		border 1px solid $white
+		padding .2em 1.2em
+		margin-bottom .9em
+		display inline-block
+		
+/*Tablet*/
+@media (min-width: 768px)
+	.FeatureIndex
+		&-imageContainer
+		&-text
+			float left
+		&-text
+			max-height 273px
