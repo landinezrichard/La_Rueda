@@ -2,22 +2,24 @@ section.Destacados
 	h3.Destacados-title
 		|	DESTACADOS
 	div.Destacados-borde
-	div.Destacados-list
-		div.Destacados-item
-			h4.Destacados-itemTitle
-				|	HSC
-			div.Destacados-itemBorde
-			p.Destacados-itemDescription
-				|	Llanta que permite el reencauche gracias a su sólida estructura de cinturones reforzados y su cascara robusta
-			figure.Destacados-imageContainer
-				img.Destacados-image(src="../images/llanta.png")
+	div.Destacados-list.owl-carousel
+		- for (var x = 0; x < 7; x++)
+			div.Destacados-itemContainer
+				div.Destacados-item
+					h4.Destacados-itemTitle
+						|	HSC
+					div.Destacados-itemBorde
+					p.Destacados-itemDescription
+						|	Llanta que permite el reencauche gracias a su sólida estructura de cinturones reforzados y su cascara robusta
+					figure.Destacados-imageContainer
+						img.Destacados-image(src="../images/llanta.png")
 
-			div.Destacados-shadow
-				a.Destacados-shadowButton(href="#modalCaract")
-					span.Destacados-shadowButtonText
-						|	VER DETALLES
-					span.Destacados-shadowButtonIcon.icon-chevron-thin-right
-			a.Destacados-button(href="")
-				span.Destacados-buttonText
-					|	VER MÁS
-				span.Destacados-buttonIcon.icon-chevron-thin-right
+					div.Destacados-shadow
+						a.Destacados-shadowButton(href="#modalCaract")
+							span.Destacados-shadowButtonText
+								|	VER DETALLES
+							span.Destacados-shadowButtonIcon.icon-chevron-thin-right
+				a.Destacados-button(href="")
+					span.Destacados-buttonText
+						|	VER MÁS
+					span.Destacados-buttonIcon.icon-chevron-thin-right

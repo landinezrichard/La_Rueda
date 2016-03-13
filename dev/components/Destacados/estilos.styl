@@ -1,24 +1,32 @@
 /*DESTACADOS*/
 
 .Destacados
+	margin 1em 0
 	&-fondo
 		background-image url('../images/fondo.png')
 	&-title
 		font-weight 400
 		font-size 2.56em
+		margin 0
 	&-borde
 		width 357px
 		height 3px
 		background-color $light_gray
 		display inline-block
+		margin-bottom 1em
 	&-list
 		max-width 1480px
+	&-itemContainer
+		position relative
+		display inline-block
 	&-item
 		background-color $white
 		max-width 388px
 		height 609px
 		position relative
 		display inline-block
+		box-shadow 5px 5px 10px rgba(0,0,0,0.1)
+		margin 1em
 	&-itemTitle
 		font-weight 400
 		font-size 2.56em
@@ -55,7 +63,7 @@
 		top 0
 		left 0		
 		width 100%
-		height 97%
+		height 100%
 		background-color transparent
 		text-align center
 		transition all 1s ease
@@ -74,4 +82,29 @@
 		border 2px solid $yellow
 		position absolute
 		top 50%
-		left 20%			
+		left 20%
+/*Estilos Botones Carrusel*/
+
+.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable
+	position absolute
+	bottom 50%
+	left 0
+	right 0
+	margin 0 auto
+	max-width 1480px
+	
+.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons div
+	width 35px
+	height 35px
+	line-height 35px	
+	padding 7px
+	background-color transparent	
+	font-size 3.5em
+	text-align center
+	color $yellow
+	
+.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-prev
+	float left
+	
+.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-next
+	float right			
