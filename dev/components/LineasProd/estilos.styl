@@ -6,19 +6,18 @@
 		font-weight 400
 		font-size 2.56em
 		margin 0
-		
+
 	&-borde
 		width 471px
 		height 3px
 		background-color $light_gray
 		display inline-block
 		margin-bottom 1em
-		
+
 	&-link
 		display inline-block
 		cursor pointer
-		// margin 0 1em
-		
+
 	&-imageContainer
 		margin 0 1em
 		position relative
@@ -28,13 +27,13 @@
 	&-shadow
 		position absolute
 		top 0
-		left 0		
+		left 0
 		width 100%
 		height 100%
 		background-color $transparencia
 		text-align center
 		transition all 1s ease
-		
+
 		&:hover
 			background-color transparent
 	&-shadowText
@@ -48,3 +47,7 @@
 		color $white
 		border-bottom 3px solid $yellow
 		padding 0 1.2em
+/*Tablet*/
+@media (min-width: 768px)
+	.LineasProd
+		display inline-block

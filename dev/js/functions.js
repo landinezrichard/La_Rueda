@@ -30,7 +30,8 @@ $(document).ready(function() {
 	$('.Destacados-list.owl-carousel').owlCarousel({
 		itemsCustom: [
 			[0, 1],
-			[800,3]
+			[800,2],
+			[1145,3]
 		],
 		navigation: true,
 		autoPlay: false,

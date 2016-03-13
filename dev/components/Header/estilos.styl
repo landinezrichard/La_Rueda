@@ -11,20 +11,20 @@
 	// overflow hidden
 	height 3em
 	line-height 2.5em
-	
+
 	&-logo
 		display inline-block
 		float left
-		margin-left 1em		
+		margin-left 1em
 		
 		& .Logo-link
 			font-size 3em
-		
+
 	&-subMenu--mobile
 		display inline-block
 		float right
 		margin-right .5em
-		
+
 	&-cotizadorButton
 		text-decoration none
 		text-transform uppercase
@@ -33,14 +33,14 @@
 		font-weight 700
 		font-size 1em
 		padding .3em 1em
-	&-contactoButton	
+	&-contactoButton
 	&-menuButton
 		border none
 		background-color transparent
 
 	&-subMenu--desktop
 		display none
-	&-about	
+	&-about
 	&-contacto
 		display inline-block
 	&-contactoText
@@ -55,31 +55,31 @@
 		display none
 
 /*Tablet*/
-
-@media (min-width: 768px)
+@media (min-width: 1100px)
 	.Header
 		height 120px
 		&-container
 			width 1480px
-			max-width 1480px 
+			max-width 1480px
 			margin 0 auto
-		&-logo			
+		&-logo
 			float left
 			width 175px
 			height 120px
-			
+
 			& .Logo-link
 				font-size 7.5em
-			
-		&-right
-			float right
-			width 1288px
+
+		&-right			
+			text-align center			
+			display inline-block
+			width 80%
+			// width 1288px
 		&-subMenu--mobile
 			display none
 		&-subMenu--desktop
 			display inline-block
-			float right			
-			
+
 		&-about
 			color $white
 			text-transform uppercase
@@ -97,3 +97,10 @@
 			font-size 1.16em
 		&-contacto--mobile
 			display none !important
+/*Desktop*/
+@media (min-width: 1496px)
+	.Header
+		&-right
+			float right
+		&-subMenu--desktop
+			float right

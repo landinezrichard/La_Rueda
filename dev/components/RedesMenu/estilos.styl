@@ -1,12 +1,27 @@
 /*REDES MENU FIXED*/
 .Redes
 	display none
+
+/*REDESMENU (el del footer)*/
+.RedesMenu
+	&--footer
+		display inline-block
+	&-list--footer
+		list-style none
+		padding 0
+	&-item--footer
+		margin 0.75em .5em
+		border-bottom 1px dotted $yellow
+		display inline-block
+	&-link--footer
+		color $yellow 
+
 /*Tablet*/
 @media (min-width: 768px)
 	.Redes
 		display block
 		position fixed
-		left 10px
+		right 10px
 		top 40%
 		z-index 11
 		&-link
@@ -26,22 +41,6 @@
 			&.icon-blogger
 				font-size 1.2rem
 
-/*REDESMENU*/
-.RedesMenu
-	&--footer
-		display inline-block
-	&-list--footer
-		list-style none
-		padding 0
-	&-item--footer
-		margin 0.75em .5em
-		border-bottom 1px dotted $yellow
-		display inline-block
-	&-link--footer
-		color $yellow 
-
-/*Tablet*/
-@media (min-width: 768px)
 	.RedesMenu
 		&--footer
 			display inline-block
@@ -53,7 +52,7 @@
 		&-item--footer
 			margin 0.75em 0
 			width 151px
-		&-link--footer			
+		&-link--footer
 			font-weight 300
 			font-size 1.02em
 			padding .3em 0
@@ -62,3 +61,14 @@
 			margin-right 1em
 			&.icon-google-plus
 				margin-right .7em
+/*Desktop*/
+@media (min-width: 1100px)
+	.Redes
+		display block
+		position fixed
+		left 10px
+		top 40%
+		z-index 11
+	.RedesMenu
+		&--footer		
+			float right
