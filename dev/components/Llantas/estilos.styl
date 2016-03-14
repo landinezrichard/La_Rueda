@@ -45,6 +45,7 @@
 		background-color $dark_gray5
 		margin-bottom .5em
 	&-info
+		margin-top 1em
 		display inline-block		
 	&-redBox
 		background-color $red
@@ -75,7 +76,7 @@
 		font-size 3.06em
 		color $dark_black
 		display inline-block
-		margin .5em
+		margin .5em .5em 0
 		vertical-align middle
 	&-descrip
 		font-weight 300
@@ -83,21 +84,26 @@
 		color $dark_black
 		display inline-block
 		max-width 340px
-		margin 1em 0
+		margin-bottom 1em
 		vertical-align middle		
 	&-SubInfo
 		display block
 		width 100%
 		height
-.Clear
-	clear both
+
 /*Tablet*/
 @media (min-width: 768px)
 	.Llantas		
 		&-titleContainer
 			vertical-align middle
 		&-containerText
-			vertical-align middle			
+			vertical-align middle
+		&-info
+			margin 0
+		&-descuento
+			margin .5em
+		&-descrip
+			margin 1em 0	
 @media (min-width: 963px)
 	.Llantas
 		&-sobreIm
@@ -114,13 +120,10 @@
 			margin 2em 0 .3em		
 		&-aside			
 			display inline-block			
-			position relative
-		&-info
-			float left
-			margin-left 100px
+			position relative		
 		&-descrip
 			text-align left
-@media (min-width: 1480px)
+@media (min-width: 1496px)
 	.Llantas
 		&-sobreIm
 			height 532px
@@ -129,6 +132,7 @@
 			bottom 10%
 		&-aside
 			float left
-			margin-top -410px		
-		// &-containerText
-		// 	
+			margin-top -410px
+		&-info
+			float left
+			margin-left 100px

@@ -15,8 +15,12 @@
 		margin .3em 1em
 
 .FiltroLlantas
-	text-align left
+	text-align center
 	margin 1.5em
+	
+	&-form
+	&-formDimension
+		text-align left
 	
 	&-label
 		display block
@@ -68,21 +72,39 @@
 		vertical-align middle
 	&-buttonIcon		
 		font-size 1em
-	
 		
 /*Tablet*/
 @media (min-width: 768px)
 	.select
-		width 360px
+		width 300px
 		display inline-block
 	.select--linea
 		&:nth-child(2n+1)
 			margin .3em .6em
-	.FiltroLlantas
+	.FiltroLlantas		
 		&-button
-			width 350px
+			width 290px
 			padding .3em
 			margin 0
 		&-buttonIcon
 			margin-left .5em
 			font-size 1.3em
+/*Desktop*/
+@media (min-width: 900px)	
+	.FiltroLlantas
+		&-form
+		&-formDimension
+			display inline-block
+			width 40%
+			vertical-align top
+
+@media (min-width: 1495px)
+	.select
+		width 360px
+	.FiltroLlantas
+		&-form
+		&-formDimension
+			display block
+			width 100%
+		&-button
+			width 350px
