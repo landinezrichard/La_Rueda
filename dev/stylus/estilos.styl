@@ -8,6 +8,7 @@
 $white = #FFF
 $transparent_white = rgba(255,255,255,.20)
 $full_black = #000
+$dark_black = #1E120D
 $transparent_black = rgba(0,0,0,.85)
 $yellow = #F5A118
 $dark_gray = #282828
@@ -21,6 +22,8 @@ $light_gray3 = #EFEFEF
 $light_gray4 = #D3D3D3
 $transparencia = rgba(0,0,0,.67)
 $transparencia2 = rgba(0,0,0,.54)
+$red = #A80000
+$dark_red = #7F0000 
 
 html
 	width 100%
@@ -46,7 +49,7 @@ option
 	
 .u-centrar
 	text-align center
-	overflow hidden
+	// overflow hidden
 
 /*BOTON DE CHAT*/	
 .Chat
@@ -120,29 +123,3 @@ option
 /*Estilos OWL CAROUSEL*/
 @import "../lib/owl-carousel/owl-carousel.styl"
 @import "../lib/owl-carousel/owl-theme.styl"
-
-
-/*Estilos Flex Slider*/
-.flexslider
-	margin-bottom 10px
-
-.flex-control-nav
-	position relative
-	bottom auto
-
-.custom-navigation
-	display table
-	width 100%
-	table-layout fixed
-
-.custom-navigation > * 
-	display table-cell
-
-.custom-navigation > a
-	width 50px
-
-.custom-navigation .flex-next
-	text-align right
-
-.custom-controls-container
-	display none

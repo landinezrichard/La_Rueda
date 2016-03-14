@@ -85,9 +85,9 @@ gulp.task('build-css', function(){
     'include css': true
   }))
   .on('error', gutil.log)
-  .pipe(groupQuerys())
-  .pipe(nano())
-  .on('error', gutil.log)
+  // .pipe(groupQuerys())
+  // .pipe(nano())
+  // .on('error', gutil.log)
   .pipe(gulp.dest(paths.css.dest))
 });
 

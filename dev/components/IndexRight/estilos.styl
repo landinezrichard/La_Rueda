@@ -58,7 +58,6 @@
 		padding 0 1.7em
 
 	&-centros
-		text-align left
 		max-width 1041px
 	&-centrosTitleContainer
 		display inline-block
@@ -76,8 +75,9 @@
 		display inline-block
 		margin-left .5em
 	&-centrosSlider
-		text-align center
-		overflow hidden
+		text-align center		
+		width 100%
+		float left
 	&-centrosImageContainer
 		margin 0
 		display inline-block
@@ -161,11 +161,15 @@
 	float right
 
 .Ancho
+	width 100%
 	max-width 320px
+	display inline-block
+
 
 /*Tablet*/
 @media (min-width: 768px)
 	.IndexRight
+		float none
 		&-form
 			height 90px
 			line-height 90px
@@ -181,7 +185,9 @@
 	// .centrosSlider
 	// 	width 1041px !important
 	.Ancho
-		max-width 1041px
+		max-width none
+		width 1040px
+		float left
 /*Desktop*/
 @media (min-width: 1100px)
 	.IndexRight
@@ -189,3 +195,5 @@
 			display none
 		&-flecha
 			display inline-block
+		&-centros
+			text-align left

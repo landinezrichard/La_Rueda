@@ -46,14 +46,6 @@ $(document).ready(function() {
 
 	$.each($('.owl-next'),function(elemento){
 			$(this).html(arrow_der);
-	});
-
-	/*Flex slider*/
-
-	$('.flexslider').flexslider({
-	    animation: "slide",
-	    controlsContainer: $(".custom-controls-container"),
-	    customDirectionNav: $(".custom-navigation a")
-	});
+	});	
 
 });
