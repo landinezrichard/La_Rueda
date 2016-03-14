@@ -1,36 +1,39 @@
-/*DESTACADOS*/
+/*LLANTAS2*/
 
-.Destacados
-	margin 1em 0
-	&-fondo
-		background-image url('../images/fondo.png')
-		background-size cover
+.Llantas2	
+	&-titleContainer
+		display inline-block
+		margin-top 2.5em
 	&-title
 		font-weight 400
 		font-size 2.56em
+		color $full_black
 		margin 0
 	&-borde
-		width 357px
+		width 245px
 		height 3px
 		background-color $light_gray
 		display inline-block
-		margin-bottom 1em
-	&-list
-		max-width 1480px
 	&-itemContainer
 		position relative
 		display inline-block
+		margin 1em 0
 	&-item
 		background-color $light_gray3
-		max-width 388px
-		height 609px
+		max-width 352px
+		height 574px
 		position relative
 		display inline-block
 		box-shadow 5px 5px 10px rgba(0,0,0,0.1)
-		margin 1em
+		margin 1em .4em
+	&-imageContainer
+		width 276px
+		height 276px
+		margin .5em
+		display inline-block
 	&-itemTitle
 		font-weight 400
-		font-size 2.56em
+		font-size 2em
 		margin 0
 	&-itemBorde
 		width 357px
@@ -43,10 +46,11 @@
 		text-align left
 		color $dark_gray4
 		margin .5em
-	&-imageContainer
-		border 1px solid $light_gray
-		width 364px
-		height 370px
+	&-marca
+		font-weight 400
+		font-size 1.5em
+		color $full_black
+		text-align left
 		margin .5em
 	&-button
 		color $white
@@ -54,7 +58,7 @@
 		font-weight 300
 		font-size 1.5em
 		position absolute
-		bottom 0
+		bottom -10px
 		left 27%
 		padding .3em 1.2em
 	&-buttonIcon
@@ -71,10 +75,11 @@
 
 		&:hover
 			background-color $transparencia
-			.Destacados-shadowButton
+			.Llantas2-shadowButton1
+			.Llantas2-shadowButton2
 				display inline-block
-
-	&-shadowButton
+	&-shadowButton1
+	&-shadowButton2
 		display none
 		padding .3em 1.2em
 		font-weight 400
@@ -82,31 +87,14 @@
 		color $white
 		border 2px solid $yellow
 		position absolute
-		top 50%
-		left 20%
-/*Estilos Botones Carrusel*/
-
-.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable
-	position absolute
-	bottom 50%
-	left 0
-	right 0
-	margin 0 auto
-	max-width 1480px
-	z-index 2
-	
-.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons div
-	width 50px
-	height 50px
-	line-height 50px
-	padding 7px
-	background-color transparent
-	font-size 3.5em
-	text-align center
-	color $yellow
-
-.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-prev
-	float left
-
-.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-next
-	float right	
+		left 15%
+		
+	&-shadowButton1		
+		top 40%
+		
+	&-shadowButton2		
+		top 55%
+/*Tablet*/
+@media (min-width: 768px)	
+	.Llantas2
+		margin-top 120px

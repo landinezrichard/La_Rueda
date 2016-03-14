@@ -1,0 +1,51 @@
+section.Llantas2
+	div.Llantas2-titleContainer
+		h1.Llantas2-title
+			|	LLANTAS
+		div.Llantas2-borde
+	div.Llantas3-info
+		div.Llantas3-tabsContainer
+			ul.Llantas3-tabs#tabsNav
+				li.Llantas3-tabsItem
+					a.Llantas3-tabsItemLink.Llantas3-tabs--is-selected(data-tab="tab_one")
+						|	CARACTERÍSTICAS
+				li.Llantas3-tabsItem
+					a.Llantas3-tabsItemLink(data-tab="tab_two")
+						|	DESCRIPCIÓN
+				li.Llantas3-tabsItem
+					a.Llantas3-tabsItemLink(data-tab="tab_three")
+						|	GARANTÍA
+			div.Llantas3-tabsContent#content
+				div#tab_one.Llantas3-tabsContentPane.Llantas3-tabs--is-active
+					include ../Llantas3-item/template.jade
+				div#tab_two.Llantas3-tabsContentPane
+					include ../Llantas3-item/template.jade
+				div#tab_three.Llantas3-tabsContentPane
+					include ../Llantas3-item/template.jade
+		div.Llantas3-imageDesc
+			h3.Llantas3-imageTitle
+				|	ContiSportContact 5P
+			figure.Llantas3-imageContainer
+				img.Llantas3-image(src="../images/llanta.png")
+	div.Llantas3-actions
+		a.Llantas3-buttonRec
+			span.Llantas3-buttonText
+				|	Recomendar
+			span.Llantas3-buttonIcon.icon-chevron-thin-right
+		a.Llantas3-redeslink--footer(href='')
+			span.icon-facebook.Llantas3-fb
+				|	facebook
+		a.Llantas3-redeslink--footer(href='')
+			span.icon-twitter.Llantas3-tw
+				|	twitter
+		a.Llantas3-redeslink--footer(href='')
+			span.icon-google-plus.Llantas3-gp
+				|	google+
+		a.Modal-leftButtonGris
+			span.Modal-leftButtonText
+				|	AGREGAR AL COTIZADOR
+			span.Modal-leftButtonIcon.icon-chevron-thin-right
+		a.Modal-leftButton
+			span.Modal-leftButtonText
+				|	COTIZAR
+			span.Modal-leftButtonIcon.icon-chevron-thin-right

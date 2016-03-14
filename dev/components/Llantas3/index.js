@@ -8,11 +8,11 @@ var tabs = (function () {
 	*/
 
 	var st = {
-		tabs: '.Tabs',
-		tabs_item: '.Tabs-item',
-		tabs_item_target: '.Tabs-itemLink',
-		seleccion: 'Tabs--is-selected',
-		activa: 'Tabs--is-active'
+		tabs: '.Llantas3-tabs',
+		tabs_item: '.Llantas3-tabsItem',
+		tabs_item_target: '.Llantas3-tabsItemLink',
+		seleccion: 'Llantas3-tabs--is-selected',
+		activa: 'Llantas3-tabs--is-active'
 	};
 
 	// Objeto vacío que guardará elementos que se manejan por HTML.

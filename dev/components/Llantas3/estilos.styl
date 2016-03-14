@@ -1,0 +1,117 @@
+/*LLANTAS3*/
+.Llantas3
+	margin 1em
+	&-info
+		margin .5em
+	&-tabsContainer		
+		border 1px solid $light_gray
+		display inline-block
+	&-tabs
+		width 100%
+		margin 0
+		padding 0
+		list-style none
+		text-align center
+		margin-bottom 1.5rem
+		font-size 0
+		position relative
+		transition all .3s ease		
+	&-tabsItem
+		display inline-block
+		margin 0 0
+		font-size 1.56rem
+	&-tabsItemLink
+		color $full_black
+		border-bottom 3px solid $light_gray
+		cursor pointer
+		position relative
+		padding .5em
+		float left
+		text-decoration none		
+		font-size 1.56rem
+		transition all .3s ease
+		
+		&:after
+			content ""
+			border-left 7px solid transparent
+			border-right 7px solid transparent
+			border-top 9px solid $light_gray
+			display inline-block
+			position absolute
+			top 65px
+			left 45%
+		&:focus
+			outline 0
+	&-tabsContentPane
+		display none
+		transition all .3s ease
+	&-tabs--is-active
+		display block
+
+	&-tabs--is-selected
+		color $white
+		border-bottom 3px solid $yellow
+		background-color $yellow
+			
+		&:after
+			content ""
+			border-left 7px solid transparent
+			border-right 7px solid transparent
+			border-top 9px solid $yellow
+			display inline-block
+			position absolute
+			top 65px
+			left 45%
+	/*Informacion dentro de cad pestaña*/
+	&-caract
+		margin 1em		
+		font-size 1.56em
+		color $dark_gray4
+		text-align left
+	&-caractItem
+		font-weight 400
+		margin .5em
+	&-benef
+		font-weight 700			
+		margin 4em 0 .5em
+	&-benefDesc
+		font-weight 300		
+		margin 0
+	/*imagen derecha*/	
+	&-imageDesc
+		display inline-block
+		border 1px solid $light_gray
+	&-imageTitle
+		font-weight 700
+		font-size 2.06em
+		color $yellow
+		margin .5em 0 1em
+	&.imageContainer
+		display inline-block
+		margin 1em
+
+/*Tablet*/
+@media (min-width: 768px)
+	.Llantas3
+		&-info
+			margin 3em
+			width 1335px
+			height 625px
+		&-tabsContainer
+			float left
+			height 100%
+		&-tabs
+			text-align left
+		&-tabsItemLink
+			padding .5em 1.9em
+		
+		&-imageDesc
+			float left
+			width 536px
+			height 100%
+			
+			// &:after
+			// 	left 80px
+		// &-tabs--is-selected
+		// 	&:after
+		// 		left 80px
