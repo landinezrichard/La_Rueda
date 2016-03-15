@@ -3,3 +3,56 @@ section.Cotizador
 		h1.Cotizador-title
 			|	COTIZADOR
 		div.Cotizador-borde
+	section#cont_gen_forms
+		.con_forms
+			form.forms
+				input.campo_forms(type='text', placeholder='Nombre')
+				input.campo_forms(type='text', placeholder='Email')
+				input.campo_forms(type='text', placeholder='Tel. / Cel.')
+				div.Cotizador-selectContainer
+					select.Cotizador-select(name="modelo")
+						option.Cotizador-option(value="")
+							|	Línea
+						option.Cotizador-option(value="LOREM")
+							|	LOREM
+						option.Cotizador-option(value="IMPSUM")
+							|	IMPSUM
+						option.Cotizador-option(value="ALGO")
+							|	ALGO
+				textarea.area_forms(placeholder='Comentarios')
+				.cont_btn_enviar_forms
+					input(type='submit', value='Enviar')
+		#img_forms
+			img(src='../images/diseno/camion2.jpg')
+	.cont-gen-titulos-internas
+		.titulos-internas
+			|	otros 
+			span SERVICIOS
+	section#cont_camion.cont_gen_servicios.otros
+		a.cont_gen_serv(href='servicios_interna.html')
+			img.img_servicio(src='../images/diseno/02-servicios/img_serv.jpg')
+			.cont_nombre_serv
+				.icon_serv
+					img(src='../images/diseno/02-servicios/reparacion_llantas.png')
+				.nombre_serv Reparación de llantas
+			.hover_serv
+				.ver_serv VER MÁS
+				.nombre_serv Reparación de llantas
+		a.cont_gen_serv(href='servicios_interna.html')
+			img.img_servicio(src='../images/diseno/02-servicios/img_serv.jpg')
+			.cont_nombre_serv
+				.icon_serv
+					img(src='../images/diseno/02-servicios/alineacion.png')
+				.nombre_serv Alineación
+			.hover_serv
+				.ver_serv VER MÁS
+				.nombre_serv Alineación
+		a.cont_gen_serv(href='servicios_interna.html')
+			img.img_servicio(src='../images/diseno/02-servicios/img_serv.jpg')
+			.cont_nombre_serv
+				.icon_serv
+					img(src='../images/diseno/02-servicios/balanceo.png')
+				.nombre_serv Balanceo
+			.hover_serv
+				.ver_serv VER MÁS
+				.nombre_serv Balanceo
