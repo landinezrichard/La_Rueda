@@ -1,0 +1,79 @@
+#cuerpo-internas
+  .u-centrar
+    .cont-gen-titulos-internas
+      .titulos-internas
+        | nuestros 
+        span SERVICIOS
+    .cont_gen_pestanas_serv
+      #btn_auto.btn_pestana_serv.active
+        | Automovil
+      #btn_taxi.btn_pestana_serv
+        | taxi
+      #btn_camion.btn_pestana_serv
+        | camion
+    section#cont_gen_serv-interna
+      #cont_info_serv_interna
+        #cont_titulo_serv_interna
+          #icon_tit_serv_interna
+            img(src='../images/diseno/02-servicios/alineacion.png')
+          #tit_serv_interna Alineación
+        #txt_serv_interna
+          | Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer.
+        #cont_cent_serv_serv_int
+          | Centros de servicio
+        #cont_selec_cent_serv_int
+          .cont-select-servicios
+            | PPSierra Cll 116 # 70F - 16
+            .despleg-selec-serv
+              .servicio-centro PPSierra Cll 116 # 70F - 16
+              .servicio-centro PPSierra Cll 116 # 70F - 16
+              .servicio-centro PPSierra Cll 116 # 70F - 16
+              .servicio-centro PPSierra Cll 116 # 70F - 16
+              .servicio-centro PPSierra Cll 116 # 70F - 16
+      include ../AsideMenu/template.jade
+    section#cont_gen_forms
+      .con_forms
+        .titulos_forms
+          span Otros
+          |  servicios
+        form.forms
+          input.campo_forms(type='text', placeholder='Nombre')
+          input.campo_forms(type='text', placeholder='Email')
+          input.campo_forms(type='text', placeholder='Tel. / Cel.')
+          textarea.area_forms(placeholder='Nombre')
+          .cont_btn_enviar_forms
+            input(type='submit', value='Enviar')
+      #img_forms
+        img(src='../images/diseno/02-servicios/img_form.jpg')
+    .cont-gen-titulos-internas
+      .titulos-internas
+        | más 
+        span SERVICIOS
+    section#cont_camion.cont_gen_servicios.otros
+      a.cont_gen_serv(href='servicios_interna.html')
+        img.img_servicio(src='../images/diseno/02-servicios/img_serv.jpg')
+        .cont_nombre_serv
+          .icon_serv
+            img(src='../images/diseno/02-servicios/reparacion_llantas.png')
+          .nombre_serv Reparación de llantas
+        .hover_serv
+          .ver_serv VER MÁS
+          .nombre_serv Reparación de llantas
+      a.cont_gen_serv(href='servicios_interna.html')
+        img.img_servicio(src='../images/diseno/02-servicios/img_serv.jpg')
+        .cont_nombre_serv
+          .icon_serv
+            img(src='../images/diseno/02-servicios/alineacion.png')
+          .nombre_serv Alineación
+        .hover_serv
+          .ver_serv VER MÁS
+          .nombre_serv Alineación
+      a.cont_gen_serv(href='servicios_interna.html')
+        img.img_servicio(src='../images/diseno/02-servicios/img_serv.jpg')
+        .cont_nombre_serv
+          .icon_serv
+            img(src='../images/diseno/02-servicios/balanceo.png')
+          .nombre_serv Balanceo
+        .hover_serv
+          .ver_serv VER MÁS
+          .nombre_serv Balanceo

@@ -39,14 +39,7 @@ $(document).ready(function() {
 		pagination: false
 	});
 
-	/*Modificar los controles del Owl*/
-	$.each($('.owl-prev'),function(elemento){
-			$(this).html(arrow_izq);
-	});
-
-	$.each($('.owl-next'),function(elemento){
-			$(this).html(arrow_der);
-	});
+	
 
 	/*Paginación jPaginate*/
 
@@ -63,6 +56,55 @@ $(document).ready(function() {
 					$('._current','.Llantas2-pages').removeClass('_current').hide();
 					$('#page'+page).addClass('_current').show();
 				}
+	});
+
+	/*Funciones Cristian*/
+
+	$('.carrusel-img-serv').owlCarousel({
+	        itemsCustom: [
+	            [0, 1]
+	        ],
+	        navigation: true,
+	        autoPlay: false,
+	        slideSpeed: 1000,
+	        pagination: false
+	    });
+
+	$('.cont-select-servicios').click(function(){
+	    
+	    $(this).children('.despleg-selec-serv').slideToggle('fast');
+
+	});
+	
+	
+	$('#btn_auto').click(function(){
+	    $('.btn_pestana_serv').removeClass('active');
+	    $(this).addClass('active');
+	    $('.cont_gen_servicios').removeClass('selec');
+	    $('#cont_auto').addClass('selec');
+	});
+	
+	$('#btn_taxi').click(function(){
+	    $('.btn_pestana_serv').removeClass('active');
+	    $(this).addClass('active');
+	    $('.cont_gen_servicios').removeClass('selec');
+	    $('#cont_taxi').addClass('selec');
+	});
+	
+	$('#btn_camion').click(function(){
+	    $('.btn_pestana_serv').removeClass('active');
+	    $(this).addClass('active');
+	    $('.cont_gen_servicios').removeClass('selec');
+	    $('#cont_camion').addClass('selec');
+	});
+
+	/*Modificar los controles del Owl*/
+	$.each($('.owl-prev'),function(elemento){
+			$(this).html(arrow_izq);
+	});
+
+	$.each($('.owl-next'),function(elemento){
+			$(this).html(arrow_der);
 	});
 
 });

@@ -10,21 +10,7 @@ html(lang="es")
 		div.remodal-bg
 			include ../components/RedesMenu/template.jade
 			include ../components/Header/template.jade
-			div.u-centrar
-				include ../components/Llantas2/template.jade
-			div.Destacados-fondo
-				div.u-centrar
-					div.Llantas2-pages
-						div.Llantas2-list._current#page1
-							- for (var x = 0; x < 8; x++)
-								include ../components/Llantas2-item/template.jade
-						div.Llantas2-list#page2
-							- for (var x = 0; x < 8; x++)
-								include ../components/Llantas2-item/template.jade
-						div.Llantas2-list#page3
-							- for (var x = 0; x < 5; x++)
-								include ../components/Llantas2-item/template.jade
-					div.Llantas2-paginador#paginar
+			include ../components/Servicios/template.jade
 			include ../components/Footer/template.jade
 			include ../components/modal/template.jade
 			div.Chat
