@@ -46,6 +46,23 @@ $(document).ready(function() {
 
 	$.each($('.owl-next'),function(elemento){
 			$(this).html(arrow_der);
-	});	
+	});
+
+	/*Paginación jPaginate*/
+
+	$("#paginar").paginate({
+		count: 3,
+		start: 1,
+		display: 5,
+		text_color: '#fff',
+		text_hover_color: '#000',
+		background_color: '#F5A118',
+		border_hover_color: '#F5A118',
+		images: false,
+		onChange: function(page){
+					$('._current','.Llantas2-pages').removeClass('_current').hide();
+					$('#page'+page).addClass('_current').show();
+				}
+	});
 
 });

@@ -1,0 +1,91 @@
+/*FILTRO LLANTAS 2*/
+
+.Filtro2
+	margin 1.5em 0
+	// background-color $transparent_black
+	color $white
+	position relative
+	
+	&-visible
+		overflow auto
+		cursor pointer
+		padding 0
+		background-color $transparent_black
+	
+	&-desplegable
+		padding 1.5em 0
+		background-color $transparent_black
+		position absolute
+		z-index 4
+		display none
+	&-title
+		display inline-block
+		font-weight 400
+		font-size 2.43em
+		margin 0 0 0 1em
+		float left
+		vertical-align middle
+		line-height 76px
+		
+	&-titleIcon
+		float right
+		font-weight 400
+		font-size 2.43em
+		display none
+		vertical-align middle
+		line-height 76px
+		margin 0 1em 0 0
+	&-titleIcon--open
+		display inline-block
+	
+	&-field
+		padding 0
+		border none
+		margin 0
+		display inline-block
+		width 90%
+		
+	&-select
+		border none
+		box-shadow none
+		background-color transparent
+		background-image none
+		appearance none
+		display block
+		width 100%
+		// width 115%
+		color $white
+		padding .2em .5em
+		font-weight 300
+		font-size 1.31em
+		& option
+			font-weight 300
+	&-option
+		background-color $dark_gray
+		font-weight 300
+		font-size 1.1rem
+	&-button
+		color $white
+		background-color $yellow
+		padding .3em
+		margin .5em .1em
+		display inline-block
+		font-size 1.5em
+		text-align center
+		width 355px
+	&-buttonText
+	&-buttonIcon
+		vertical-align middle
+	&-buttonIcon
+		font-size 1em
+/*Tablet*/
+@media (min-width: 500px)
+	.Filtro2
+		&-field
+			width 60%
+/*Dektop*/
+@media (min-width: 940px)
+	.Filtro2
+		&-field
+			width 30%
+			display inline-block

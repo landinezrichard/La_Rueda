@@ -1,11 +1,9 @@
 /*VENTANA MODAL CARACTERISTICAS*/
-.Modal
-	padding 1em
+
 .Modal-left
 	display inline-block
 	text-align left
-	border-right 1px solid $light_gray
-	padding 1em
+	border-right 1px solid $light_gray	
 	vertical-align top
 	&Title
 		font-weight 400
@@ -58,3 +56,9 @@
 	border-radius 50%
 	left inherit !important 
 	right 0 !important
+/*Tablet*/
+@media (min-width: 768px)
+	.Modal
+		padding 1em
+	.Modal-left
+		padding 1em

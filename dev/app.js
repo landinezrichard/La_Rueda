@@ -8,6 +8,13 @@
 
 	document.addEventListener('DOMContentLoaded', onDOMload);
 
+	function mostrarfiltro () {		
+		$('.Filtro2-visible').on('click',function(){
+			$('.Filtro2-titleIcon').toggleClass('Filtro2-titleIcon--open');
+			$('.Filtro2-desplegable').fadeToggle();
+		});
+	}
+
 	function onDOMload() {		
 		showMenu.init();
 		tabs.init();
@@ -15,5 +22,6 @@
 		showContacto.init();
 		//para la ventana modal
 		require('remodal');
+		mostrarfiltro();
 	}
 }())
