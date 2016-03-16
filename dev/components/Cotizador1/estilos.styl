@@ -1,0 +1,32 @@
+/*COTIZADOR1*/
+
+.Cotizador1
+	&-item
+		background-color #f2f2f2
+		width 100%
+	&-imageContainer
+		margin 0
+		width 176px
+		height 180px
+		border 1px solid $light_gray4
+		display inline-block
+	&-image
+		margin 0 16px
+	&-input::-webkit-outer-spin-button 
+	&-input::-webkit-inner-spin-button
+		width 1em
+		border-left 1px solid #BBB
+		opacity .5 /* shows Spin Buttons per default (Chrome >= 39) */
+		position absolute
+		top 0
+		right 0
+		bottom 0
+		
+	&-input::-webkit-inner-spin-button:hover
+	&-input::-webkit-inner-spin-button:active
+		box-shadow 0 0 2px #0CF
+		opacity .8
+	/* Override browser form filling */
+	&-input:-webkit-autofill
+		background black
+		color red

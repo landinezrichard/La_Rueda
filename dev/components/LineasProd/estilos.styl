@@ -1,6 +1,7 @@
 /*LINEAS PRODUCTO*/
 
 .LineasProd
+	display inline-block
 	margin 50px 0
 	&-title
 		font-weight 400
@@ -8,7 +9,7 @@
 		margin 0
 
 	&-borde
-		width 471px
+		width 320px
 		height 3px
 		background-color $light_gray
 		display inline-block
@@ -50,5 +51,5 @@
 /*Tablet*/
 @media (min-width: 768px)
 	.LineasProd
-		margin 50px 0
-		display inline-block
+		&-borde
+			width 471px

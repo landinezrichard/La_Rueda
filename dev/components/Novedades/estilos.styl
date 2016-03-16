@@ -1,0 +1,207 @@
+
+
+.cont_gen_nov_destacadas {
+    width: 95%;
+    float: left;
+    margin: 20px 2.5%;
+}
+
+.cont_not_destacada {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    background: #efefef;
+    box-shadow: 0 8px 15px rgba(0,0,0,.2);
+    transition: all .3s;
+    margin: 10px 0;
+    max-width: 740px;
+}
+.cont_not_destacada:hover{
+    opacity: .9;
+}
+
+.titulo_nov_destacada{
+    width: 100%;
+    float: left;
+    background: rgba(0,0,0,.7);
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 10%;
+    box-sizing: border-box;
+}
+.img_not_destacada {
+    width: 100%;
+    height: auto;
+    max-height: 457px;
+    overflow: hidden;
+}
+
+.txt_nov_destacada {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 4%;
+    font-size: 20px;
+    text-align: left;
+    color: #3f3f3f;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.btn_nov_destacada {
+    width: auto;
+    display: inline-block;
+    background: #f5a118;
+    font-size: 24px;
+    color: #fff;
+    padding: 5px 10px 5px 30px;
+    margin: 10px 0 10px 0;
+    text-transform: uppercase;
+}
+.btn_nov_destacada:after{
+    content: "";
+    width: 38px;
+    height: 21px;
+    background: url(../images/diseno/02-servicios/flecha_blanca.png);
+    background-size: auto 100%;
+    transform: rotate(-90deg);
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 10px 0;
+}
+
+.cont_gen_otras_not {
+    width: 100%;
+    float: left;
+}
+
+.cont_otra_not {
+    width: 95%;
+    display: inline-block;
+    max-width: 388px;
+    background: #efefef;
+    box-sizing: border-box;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+    position: relative;
+    margin: 30px 2.5%;
+    transition: all .3s;
+}
+.cont_otra_not:hover{
+    opacity: .9;    
+}
+
+.titulo_otra_not {
+    width: 100%;
+    float: left;
+    height: auto;
+    font-size: 25px;
+    border-bottom: 4px solid #d8d8d8;
+    color: #000;
+}
+
+.txt_otra_not {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 27px;
+    color: #000;
+}
+
+.img_otra_not {
+    width: 100%;
+    max-height: 321px;
+    height: 20vw;
+    overflow: hidden;
+    display: none;
+}
+
+.btn_otra_nov_destacada {
+    width: auto;
+    display: inline-block;
+    background: #f5a118;
+    font-size: 24px;
+    color: #fff;
+    padding: 5px 10px 5px 30px;
+    margin: 10px 0 -25px 0;
+    text-transform: uppercase;
+}
+.btn_otra_nov_destacada:after{
+    content: "";
+    width: 38px;
+    height: 21px;
+    background: url(../images/diseno/02-servicios/flecha_blanca.png);
+    background-size: auto 100%;
+    transform: rotate(-90deg);
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 10px 0;
+}
+
+@media (min-width: 800px) {
+    .img_otra_not {
+        display: block;
+    }
+    
+    .titulo_otra_not {
+        height: 115px;
+    }
+    .txt_otra_not {
+        height: 88px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .btn_otra_nov_destacada {
+        margin: -20px 0 -25px 0;
+    }
+    .cont_otra_not {
+        width: 30%;
+        margin: 30px 1%;
+    }
+    
+}
+
+@media (min-width: 960px) {
+    
+    .cont_not_destacada {
+        width: 50%;
+        margin: 0;
+        float: left;
+    }
+    .cont_gen_nov_destacadas {
+        width: 100%;
+        margin: 60px 0;
+    }
+    .titulo_nov_destacada{
+        font-size: 39px;
+        position: absolute;
+    }
+    .img_not_destacada {
+        height: 31vw;   
+    }
+    .txt_nov_destacada {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .btn_nov_destacada {
+        margin: 30px 0 -25px 0;
+    }
+    .cont_otra_not {
+        width: 25%;
+        margin: 30px 2.5%;
+    }
+    
+}
+@media (min-width: 1300px) {
+    .titulo_otra_not {
+        height: 75px;
+    }
+    .txt_otra_not {
+        height: 88px;
+        font-size: 23px;
+        line-height: 30px;
+    }
+}

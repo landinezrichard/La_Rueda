@@ -6,12 +6,11 @@
 		position relative
 	&-texto
 		color $white		
-		// color $gray2
 		text-align center
 		background-color $transparent_black
 		
 	&-titleContainer
-		max-width 370px
+		max-width 320px
 		display inline-block
 	&-title
 		font-weight 300
@@ -21,7 +20,7 @@
 		display inline-block
 	&-titleBorde
 		display inline-block
-		width 370px
+		width 100%
 		height 3px
 		background-color $light_gray
 	&-description
@@ -56,7 +55,7 @@
 		margin 0 1em 
 	&-centrosImageContainer
 	&-centrosText
-		vertical-align middle
+		vertical-align top
 	&-centrosTitleContainer	
 		max-width 740px
 		display inline-block
@@ -90,10 +89,53 @@
 		display inline-block
 		float right
 		
+	&-alianzasTitleBlock
+		margin 50px 0
+	
+	&-alianzasTitleContainer
+		width 290px
+		display inline-block	
+		
+	&-alianzasTitle
+		font-weight 400
+		font-size 2.56em
+		margin 0
+		
+	&-alianzasTitleBorde
+		width 100%
+		height 3px
+		display inline-block
+		background-color $light_gray
+		
+	&-alianzasContainer
+		display inline-block	
+		
+	&-alianzasImageContainer
+		width 320px
+		height 262px
+		display inline-block
+		border 1px solid $light_gray
+		margin 0		
+		line-height 262px
+		position relative		
+		
+	&-alianzasImage
+		vertical-align middle
+		
+	&-alianzasCaption
+		position absolute
+		bottom 0
+		left 0
+		right 0px
+		top 100px
+		font-weight 300
+		font-size 2.25em
 			
 /*Desktop*/
 @media (min-width: 1270px)
-	.Nosotros			
+	.Nosotros
+		&-titleContainer
+			max-width 370px			
 		&-texto
 			position absolute
 			top 170px
@@ -108,7 +150,10 @@
 			padding 0
 			
 		&-button			
-			padding .3em 1.5em	
+			padding .3em 1.5em
+		&-alianzasImageContainer
+			width 370px
+			float left
 						
 @media (min-width: 1480px)
 	.Nosotros			
