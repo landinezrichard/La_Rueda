@@ -29,8 +29,52 @@
 		width 100%		
 		font-size 24px
 		box-sizing border-box
-		padding 8px 5%
+		padding 8px 5%	
+	&-checkContainer
+		text-align left
+		border none
+		padding 0
+		margin 20px 0 0 0
+		float left
+	&-check
+		appearance none
+		border 1px solid $gray
+		width 25px
+		height 25px
+		vertical-align top
+		&:checked
+			background-color $yellow
+	&-label		
+		font-weight 400
+		font-size 1.12em
+		color $gray
+		margin-left 0em
+		display inline-block
+		max-width 220px
+		
+	&-contacto
+		float left
+		margin 45px 0 0 0
+		font-weight 400
+		font-size 1.5em
+		color $gray2
+	&-contactoBold
+		font-weight 700		
+		color $gray2
+
+@media (min-width: 768px)
+	.Cotizador
+		&-label
+			max-width 260px
+
+@media (min-width: 963px)
+	.Cotizador
+		&-label	
+			max-width 300px
 /*Desktop*/
 @media (min-width: 1100px)
 	.Cotizador
 		margin-top 120px
+		&-label
+			margin-left 1em
+			max-width 545px

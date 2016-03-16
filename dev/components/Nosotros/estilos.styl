@@ -1,0 +1,127 @@
+/*NOSOTROS*/
+
+.Nosotros
+	&-imageContainer
+		margin 0
+		position relative
+	&-texto
+		color $white		
+		// color $gray2
+		text-align center
+		background-color $transparent_black
+		
+	&-titleContainer
+		max-width 370px
+		display inline-block
+	&-title
+		font-weight 300
+		font-size 2.56em
+		color $yellow
+		margin 0
+		display inline-block
+	&-titleBorde
+		display inline-block
+		width 370px
+		height 3px
+		background-color $light_gray
+	&-description
+		font-weight 300
+		font-size 1.43em
+		text-align left
+		max-width 660px
+		padding 1em
+		display inline-block
+		
+	&-titleContainer
+	&-description
+		vertical-align middle
+		
+	&-centros
+		background-color #f2f2f2
+		min-height 480px
+		padding 50px 0
+		
+	&-centrosInfo
+		margin 50px 0
+		
+	&-centrosImageContainer
+		margin 0
+		border 3px solid $light_gray4
+		max-width 545px
+		display inline-block
+	&-centrosText
+		display inline-block
+		max-width 740px
+		text-align left
+		margin 0 1em 
+	&-centrosImageContainer
+	&-centrosText
+		vertical-align middle
+	&-centrosTitleContainer	
+		max-width 740px
+		display inline-block
+	&-centrosTitle
+		font-weight 300
+		font-size 2.56em		
+		margin 0
+		display inline-block
+	&-centrosRegular
+		font-weight 400
+	&-centrosTitleBorde
+		display inline-block
+		width 100%
+		height 3px
+		background-color $light_gray
+	&-centrosDescription
+		font-weight 300
+		font-size 2.18em
+		text-align left
+		max-width 740px		
+		display inline-block
+		color $dark_gray4
+		margin 1em 0
+		
+	&-button
+		border 2px solid $yellow
+		color $dark_gray4
+		padding .3em 1em
+		font-weight 400
+		font-size 1.62em
+		display inline-block
+		float right
+		
+			
+/*Desktop*/
+@media (min-width: 1270px)
+	.Nosotros			
+		&-texto
+			position absolute
+			top 170px
+			left 222px
+			color $white
+			text-align left
+			background-color transparent
+			
+		&-title			
+			margin 0 1.5em
+		&-description
+			padding 0
+			
+		&-button			
+			padding .3em 1.5em	
+						
+@media (min-width: 1480px)
+	.Nosotros			
+		&-texto
+			position absolute
+			top 170px
+			left 222px
+			color $white
+			text-align left
+		&-title			
+			margin 0 1.5em			
+		&-description
+			padding 0
+			display block
+		&-centrosText
+			margin 0 80px
