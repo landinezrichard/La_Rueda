@@ -29,7 +29,7 @@
 		display inline-block
 		width 100%
 	&-item
-		background-color $light_gray3
+		background-color rgba(255,255,255,.70)
 		max-width 388px
 		height 609px
 		position relative
@@ -105,13 +105,13 @@
 /*Estilos Botones Carrusel*/
 
 .Destacados-list.owl-carousel.owl-theme .owl-controls.clickable
-	position absolute
-	bottom 50%
-	left 0
-	right 0
+	// position absolute
+	// bottom 50%
+	// left 0
+	// right 0
 	margin 0 auto
 	max-width 1480px
-	z-index 2
+	// z-index 2
 	
 .Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons div
 	width 50px
@@ -124,7 +124,14 @@
 	color $yellow
 
 .Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-prev
+.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-next
+	position absolute
+	bottom 50%
+
+.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-prev
 	float left
+	left 0
 
 .Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-next
-	float right	
+	float right
+	right 0

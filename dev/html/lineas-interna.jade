@@ -1,0 +1,43 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+		title
+			|	La Rueda
+		link(rel="stylesheet", type="text/css", href="../css/estilos.css")
+	body
+		div.remodal-bg
+			include ../components/RedesMenu/template.jade
+			include ../components/Header/template.jade
+			div.u-centrar
+				include ../components/Lineas-interna/template.jade
+			div.Destacados-fondo
+				div.u-centrar
+					include ../components/Destacados/template.jade
+			div.u-centrar
+				#cont_conoce_centros
+					#cont_cent_serv_contacto
+						span Centros de servicio para
+						|  Taxi 
+					#cont_selec_cent_contacto
+						.cont-select-servicios
+							| PPSierra Cll 116 # 70F - 16
+							.despleg-selec-serv
+								.servicio-centro PPSierra Cll 116 # 70F - 16
+								.servicio-centro PPSierra Cll 116 # 70F - 16
+								.servicio-centro PPSierra Cll 116 # 70F - 16
+								.servicio-centro PPSierra Cll 116 # 70F - 16
+								.servicio-centro PPSierra Cll 116 # 70F - 16
+			include ../components/Footer/template.jade
+			include ../components/modal/template.jade
+			div.Chat
+				a.Chat-button(href="")
+					span.Chat-icon.icon-chat
+					span.Chat-text
+						|	CHAT ONLINE
+		script(type="text/javascript", src="../js/app.js")
+		script("text/javascript", src="https://code.jquery.com/jquery-2.2.1.min.js")
+		script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js")
+		script(type="text/javascript", src="../js/jquery.paginate.js")
+		script(type="text/javascript", src="../js/functions.js")
