@@ -8,10 +8,23 @@
 
 	document.addEventListener('DOMContentLoaded', onDOMload);
 
-	function mostrarfiltro () {		
+	function mostrarfiltro () {
 		$('.Filtro2-visible').on('click',function(){
 			$('.Filtro2-titleIcon').toggleClass('Filtro2-titleIcon--open');
 			$('.Filtro2-desplegable').fadeToggle();
+		});
+	}
+
+	function mostrarOpcionfiltro () {
+		/*Filtro desplegable*/
+		$('.Filtro2-fieldTitle').click(function (){
+			$('.Filtro2-fieldList').fadeOut();
+			if($(this).next('.Filtro2-fieldList').is(':visible')){
+				$(this).next('.Filtro2-fieldList').fadeOut();
+			}
+			if($(this).next('.Filtro2-fieldList').is(':hidden')){
+				$(this).next('.Filtro2-fieldList').fadeIn();
+			}
 		});
 	}
 
@@ -23,5 +36,6 @@
 		//para la ventana modal
 		require('remodal');
 		mostrarfiltro();
+		mostrarOpcionfiltro();
 	}
 }())
