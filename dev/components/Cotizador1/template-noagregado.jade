@@ -4,34 +4,12 @@
 			.titulos-internas
 				span COTIZADOR
 		div.Cotizador1-list
-			- for (var x = 0; x < 2; x++)
-				div.Cotizador1-item
-					figure.Cotizador1-imageContainer
-						img.Cotizador1-image(src="../images/")
-					div.Cotizador1-itemInfo
-						h4.Cotizador1-itemTitle
-							|	ContiSportContact 3
-						h5.Cotizador1-itemMarca
-							|	GENERAL TIRE
-					div.Cotizador1-itemCantidad
-						span.Cotizador1-itemCantext
-							|	cantidad
-						input.Cotizador1-input(type="number",name="quantity" min="1", max="30", value="1")
-					div.Cotizador1-eliminar
-						a.Cotizador1-eliminarButton(href="")
-							span.Cotizador1-eliminarButtonText
-								|	Eliminar
-							div.Cotizador1-eliminarButtonIcon
-								|	X
-		div.Cotizador1-actions
-			a.Cotizador1-volver(href="llantas.html")
-				span.Cotizador1-volverIcon.icon-chevron-thin-left
-				span.Cotizador1-volverText
-					|	COTIZAR MÁS PRODUCTOS
-			a.Cotizador1-cotizar(href="cotizador.html")
-				span.Cotizador1-cotizarText
-					|	COTIZAR...
-				span.Cotizador1-cotizarIcon.icon-chevron-thin-right
+			p.Cotizador1-mensaje
+				|	Aun no has agregado ningún producto al cotizador.		
+		a.Cotizador1-volver2(href="llantas.html")
+			span.Cotizador1-volverIcon.icon-chevron-thin-left
+			span.Cotizador1-volverText
+				|	AGREGAR PRODUCTOS
 		#cont_conoce_centros
 			#cont_cent_serv_contacto
 				span CONOCE NUESTROS

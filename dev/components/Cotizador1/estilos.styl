@@ -1,14 +1,119 @@
 /*COTIZADOR1*/
 
 .Cotizador1
+	margin 100px 0 !important
 	&-item
 		background-color #f2f2f2
 		width 100%
+		margin 1em 0
+		display inline-block
 	&-imageContainer
 		margin 0
 		width 176px
 		height 180px
 		border 1px solid $light_gray4
-		display inline-block
+		display inline-block		
 	&-image
-		margin 0 16px	
+		margin 0 16px
+	&-itemInfo
+		display inline-block
+		text-align left	
+		width 320px
+		margin 0 1em		
+	&-itemTitle
+		font-weight 400
+		font-size 2em
+		margin .5em 0
+	&-itemMarca
+		font-weight 400
+		font-size 1.5em
+		margin 0
+	&-itemCantidad
+		display inline-block
+		margin 0 1em
+		width 320px		
+	&-itemCantext
+		display inline-block
+		margin .7em 0
+	&-itemCantext
+	&-input
+		font-weight 400
+		font-size 1.62em
+	&-input
+		margin .7em 10px
+	&-eliminar
+		display inline-block		
+		max-width 200px
+	&-eliminarButton
+		font-weight 400
+		font-size 2.01em
+		color $dark_red2
+		display inline-block
+		margin .5em
+	&-eliminarButtonText
+		display inline-block
+		vertical-align middle
+	&-eliminarButtonIcon
+		color $white
+		background-color $dark_red2
+		border-radius 50%
+		display inline-block
+		width 35px
+		height 35px
+		line-height 35px
+		font-size 1.5rem
+		vertical-align middle
+	
+	&-imageContainer
+	&-itemInfo
+	&-eliminar
+		vertical-align top
+		
+	&-volver
+		font-weight 700
+		font-size 2.01em
+		color $white
+		background-color #A09F9F
+		width 320px
+		padding 0 .5em 0 0
+		margin-right 25px
+	&-cotizar
+		font-weight 700
+		font-size 2.01em
+		color $white
+		background-color $yellow
+		width 217px
+		padding 0 .5em
+	&-volver	
+	&-cotizar
+		display inline-block
+		margin .5em
+		
+	&-mensaje
+		font-weight 400
+		font-size 2.01em
+		
+	&-volver2
+		font-weight 700
+		font-size 2.01em
+		color $white
+		background-color $yellow
+		width 320px
+		padding 0 .5em 0 0
+		margin-right 25px
+
+/*Tablet*/
+@media (min-width: 768px)
+	.Cotizador1		
+		&-imageContainer			
+			float left		
+		&-itemInfo			
+			float left		
+		&-itemCantidad			
+			float left		
+		&-eliminar			
+			float right
+		&-actions
+			float right
+		&-volver			
+			width 410px
