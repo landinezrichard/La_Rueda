@@ -8,16 +8,18 @@
 //- 				|	TEXTO DE RELLENO DE LAS IMPRENTAS Y ARCHIVOS
 //- 			div.Sliderindex-borde
 section.Sliderindex--desktop.owl-carousel
-	figure.Sliderindex-imageContainer
-		img.Sliderindex-image(src="../images/banner-home.jpg")
+	picture.Sliderindex-imageContainer
+		source(media="(min-width: 768px)", srcset="/images/banner-home.jpg")
+		img.Sliderindex-image(src="../images/../images/banner-home-mobile.jpg")
 		div.Sliderindex-containerText
 			h3.Sliderindex-containerLight
 				|	Lorem Ipsum es simplemente
 			h3.Sliderindex-containerBold
 				|	TEXTO DE RELLENO DE LAS IMPRENTAS Y ARCHIVOS
 			div.Sliderindex-borde
-	figure.Sliderindex-imageContainer
-		img.Sliderindex-image(src="../images/banner-home2.jpg")
+	picture.Sliderindex-imageContainer
+		source(media="(min-width: 768px)", srcset="/images/banner-home2.jpg")
+		img.Sliderindex-image(src="../images/../images/banner-home2-mobile.jpg")
 		div.Sliderindex-containerText
 			h3.Sliderindex-containerLight
 				|	Lorem Ipsum es simplemente

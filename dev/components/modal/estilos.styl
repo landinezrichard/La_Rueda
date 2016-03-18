@@ -1,10 +1,14 @@
 /*VENTANA MODAL CARACTERISTICAS*/
 
+div[data-remodl-id="modalCaract"] div.Modal
+	display flex
+
 .Modal-left
 	display inline-block
 	text-align left
 	border-right 1px solid $light_gray	
 	vertical-align top
+	max-width 470px
 	&Title
 		font-weight 400
 		font-size 1.56em
@@ -39,11 +43,13 @@
 		color $white
 		padding .2em 1em
 		display inline-block
+		margin .5em .2em
 .Modal-right
 	display inline-block
 	text-align center	
 	padding 1em
 	vertical-align top
+	max-width 450px
 	&Title
 		color $yellow
 		margin 0

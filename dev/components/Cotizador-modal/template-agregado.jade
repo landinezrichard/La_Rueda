@@ -5,4 +5,12 @@ div.remodal(data-remodal-id="modalAgregado")
 			img(src='../images/diseno/flecha_cotizado.jpg')
 		#txt_agregado
 			| Tu producto ha sido agregado al cotizador
-		#btn_agregado(data-remodal-action="confirm") OK
+		a.Cotizador1-volver(data-remodal-action="confirm")
+			span.Cotizador1-volverIcon.icon-chevron-thin-left
+			span.Cotizador1-volverText
+				|	COTIZAR MÁS PRODUCTOS
+		a.Cotizador1-cotizar(href="cotizador.html")
+			span.Cotizador1-cotizarText
+				|	COTIZAR...
+			span.Cotizador1-cotizarIcon.icon-chevron-thin-right
+		//- #btn_agregado(data-remodal-action="confirm") OK

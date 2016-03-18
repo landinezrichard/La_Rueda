@@ -80,8 +80,7 @@
 
 		&:hover
 			background-color $transparencia
-			.Llantas2-shadowButton1
-			.Llantas2-shadowButton2
+			.Llantas2-shadowButton1			
 				display inline-block
 	&-shadowButton1
 	&-shadowButton2
@@ -99,6 +98,7 @@
 		
 	&-shadowButton2		
 		top 55%
+		display none
 	&-paginador
 		margin-top 1.5em
 		max-width 320px
@@ -106,3 +106,7 @@
 @media (min-width: 1100px)
 	.Llantas2
 		margin-top 120px
+		&-shadow			
+			&:hover				
+				.Llantas2-shadowButton2
+					display inline-block

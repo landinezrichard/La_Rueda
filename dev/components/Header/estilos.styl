@@ -8,9 +8,11 @@
 	left 0
 	width 100%
 	z-index 10
+	height 4em
+	line-height 3.5em
 	// overflow hidden
-	height 3em
-	line-height 2.5em
+	// height 3em
+	// line-height 2.5em
 
 	&-logo
 		display inline-block
@@ -18,12 +20,12 @@
 		margin-left 1em
 		
 		& .Logo-link
-			font-size 3em
+			font-size 4em
 
 	&-subMenu--mobile
 		display inline-block
 		float right
-		margin-right .5em
+		margin-right 1em
 		margin-top 5px
 
 	&-cotizadorButton
@@ -34,10 +36,15 @@
 		font-weight 700
 		font-size 1em
 		padding .3em 1em
+	
+	&-contactoButton
+		margin 0 1em
+
 	&-contactoButton
 	&-menuButton
 		border none
 		background-color transparent
+		padding 0 .5em
 
 	&-subMenu--desktop
 		display none
@@ -48,9 +55,10 @@
 	&--contactoIcon
 	&-tel
 		margin 0 .5em
+		color $white
 	&-contacto--mobile
 		position absolute
-		top 3em
+		top 4em
 		left 30%
 		background-color $transparent_black
 		display none
@@ -59,6 +67,7 @@
 @media (min-width: 1100px)
 	.Header
 		height 120px
+		line-height 2.5em
 		&-container
 			// width 1480px
 			max-width 1480px
