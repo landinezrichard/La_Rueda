@@ -4,10 +4,12 @@
 	&-info
 		margin .5em
 		display inline-block
+		box-sizing border-box
 	&-tabsContainer		
 		border 1px solid $light_gray
 		display inline-block
-		max-width 624px
+		box-sizing border-box
+		
 	&-tabs
 		width 100%
 		margin 0
@@ -29,10 +31,10 @@
 		position relative
 		padding .5em
 		float left
-		text-decoration none		
-		font-size 1.56rem
+		text-decoration none
+		font-size 1.2rem
 		transition all .3s ease
-		width 208px
+		width 155px
 		box-sizing border-box
 		
 		&:after
@@ -42,7 +44,7 @@
 			border-top 9px solid $light_gray
 			display inline-block
 			position absolute
-			top 65px
+			top 50px
 			left 45%
 		&:focus
 			outline 0
@@ -64,12 +66,12 @@
 			border-top 9px solid $yellow
 			display inline-block
 			position absolute
-			top 65px
+			top 50px
 			left 45%
 	/*Informacion dentro de cad pestaña*/
 	&-caract
-		margin 1em		
-		font-size 1.56em
+		margin 1em
+		font-size 1.2em
 		color $dark_gray4
 		text-align left
 	&-caractItem
@@ -86,6 +88,8 @@
 		display inline-block
 		border 1px solid $light_gray
 		vertical-align top
+		width 100%
+		box-sizing border-box
 	&-imageTitle
 		font-weight 700
 		font-size 2.06em
@@ -120,6 +124,55 @@
 		color $red_gp
 		
 
+/*Tablet*/
+@media (min-width: 960px)
+	.Llantas3
+		&-info			
+			max-width 1335px
+			min-height 670px
+			height 775px
+			
+		&-tabsContainer
+			// float left
+			height 100%
+			max-width 450px
+			
+		&-tabsItem			
+			font-size 1.56rem
+		&-tabsItemLink
+			padding .5em
+			font-size 1.2rem
+			width 148px			
+		
+		&-imageDesc
+			// float left
+			width 400px
+			height 100%
+			
+		/*Informacion dentro de cad pestaña*/
+		&-caract
+			font-size 1.56em
+/*Desktop*/
+@media (min-width: 1116px)
+	.Llantas3
+		&-info
+			margin 3em 3em 1em
+			max-width 1335px
+			
+		&-tabsContainer
+			float left
+			height 100%
+			max-width 480px
+			
+		&-tabsItemLink
+			padding .5em
+			font-size 1.2rem
+			width 158px			
+		
+		&-imageDesc
+			float left
+			width 536px
+			height 100%
 /*Desktop*/
 @media (min-width: 1300px)
 	.Llantas3
@@ -127,14 +180,34 @@
 			margin 3em 3em 1em
 			max-width 1335px
 			height 670px
-			// height 625px
+			
 		&-tabsContainer
 			float left
-			height 100%
-		// &-tabs
-		// 	text-align left
-		// &-tabsItemLink
-		// 	padding .5em 1.42em
+			height 100%			
+			max-width none
+		&-tabsItemLink
+			padding .5em
+			font-size 1.56rem
+			width 208px
+			&:after
+				content ""
+				border-left 7px solid transparent
+				border-right 7px solid transparent
+				border-top 9px solid $light_gray
+				display inline-block
+				position absolute
+				top 65px
+				left 45%
+		&-tabs--is-selected
+			&:after
+				content ""
+				border-left 7px solid transparent
+				border-right 7px solid transparent
+				border-top 9px solid $yellow
+				display inline-block
+				position absolute
+				top 65px
+				left 45%
 		
 		&-imageDesc
 			float left
