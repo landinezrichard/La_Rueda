@@ -2,7 +2,8 @@
 .Llantas
 	&-imageContainer
 		margin 0
-		position relative
+	&-image
+		display none
 	&-sobreIm
 		position relative
 		left 0
@@ -15,7 +16,7 @@
 		color $dark_gray5
 		font-weight 400
 		font-size 2.56em
-		margin 1em 0 .3em
+		margin 2.5em 0 .3em
 		line-height 1rem
 	&-borde
 		width 245px
@@ -26,17 +27,17 @@
 		display inline-block
 		position relative
 		right 0
-		background-color $transparencia2
+		background-color $full_black
 		color $white
 		border 1px solid $dark_gray5
 		max-width 691px
 	&-containerLight
 		font-weight 300
-		font-size 2.56em
+		font-size 1.7em
 		margin 1em 0 0
 	&-containerBold
 		font-weight 700
-		font-size 2.56em
+		font-size 1.7em
 		margin 0 1em .4em
 	&-bordeFull
 		display inline-block
@@ -92,7 +93,7 @@
 
 /*Tablet*/
 @media (min-width: 768px)
-	.Llantas
+	.Llantas		
 		&-titleContainer
 			vertical-align middle
 		&-containerText
@@ -103,13 +104,29 @@
 			margin .5em
 		&-descrip
 			margin 1em 0
+		&-containerLight
+			font-size 2em
+		&-containerBold
+			font-size 2em
 @media (min-width: 963px)
 	.Llantas
+		&-imageContainer
+			position relative
+		&-image
+			display inline
 		&-sobreIm
 			position absolute
 			top 3em
 		&-title
-			color $white
+			color $white		
+			margin 1em 0 .3em
+		&-containerText						
+			background-color $transparencia2
+		&-containerLight
+			font-size 2.56em
+		&-containerBold
+			font-size 2.56em
+			
 /*Desktop*/
 @media (min-width: 1100px)
 	.Llantas

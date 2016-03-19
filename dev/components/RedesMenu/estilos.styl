@@ -19,21 +19,31 @@
 /*Tablet*/
 @media (min-width: 768px)
 	.Redes
-		width 50px
+		width 375px
 		display inline-block
 		position fixed
-		right 10px
-		top 40%
+		right 143px
+		bottom 0
 		z-index 11
+		&-Button
+			width 56px
+			height 56px
+			float right
+			cursor pointer
+		&-desplegable
+			width 316px
+			display none
+			float left
+			
 		&-link
 			width 40px
 			height 40px
-			display block
+			display inline-block
 			background-color $yellow
 			color $white
 			text-align center
 			font-size 1.6em
-			margin .3em 0
+			margin .3em
 			padding 0 .1em
 			border-radius 50%
 		&-icons
@@ -63,13 +73,31 @@
 			&.icon-google-plus
 				margin-right .7em
 /*Desktop*/
-@media (min-width: 1100px)
+@media (min-width: 1100px)	
+	.RedesMenu
+		&--footer		
+			float right
+/*Desktop*/
+@media (min-width: 1520px)
 	.Redes
 		display inline-block
 		position fixed
 		left 10px
 		top 40%
 		z-index 11
+		width 46px
+		height 250px
+		
+		&-desplegable
+			width 50px
+			display inline-block !important
+		
+		&-link
+			display block
+			margin .3em 0
+			
+		&-Button
+			display none
 	.RedesMenu
 		&--footer		
 			float right

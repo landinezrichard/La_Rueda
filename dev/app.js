@@ -28,6 +28,14 @@
 		});
 	}
 
+	function mostrarSociales () {
+		/*Social desplegable*/
+		$('#mostrarSocial').click(function (e){
+			e.preventDefault();
+			$('.Redes-desplegable').fadeToggle();
+		});
+	}
+
 	function onDOMload() {		
 		showMenu.init();
 		tabs.init();
@@ -37,5 +45,6 @@
 		require('remodal');
 		mostrarfiltro();
 		mostrarOpcionfiltro();
+		mostrarSociales();
 	}
 }())
