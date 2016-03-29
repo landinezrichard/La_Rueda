@@ -1,3 +1,8 @@
+.Ancho
+	width 100%
+	max-width 320px
+	display inline-block
+
 /*INDEXRIGHT*/
 .IndexRight
 	display inline-block
@@ -86,6 +91,9 @@
 		display inline-block
 		vertical-align middle
 		position relative
+		
+	&-centrosImage
+		width 100%
 
 	&-centrosShadow
 		position absolute
@@ -135,43 +143,36 @@
 		font-size 1.58em
 		margin-left .5em
 
-.Ancho
-	width 100%
-	max-width 320px
-	display inline-block
-
-
 /*Tablet*/
 @media (min-width: 768px)
-	.IndexRight
-		float none
-		// &-form
-		// 	height 90px
-		// 	line-height 90px
-		&-centrosTitleContainer
-			line-height 1.2em
-		
-			
-		/*Ingreso*/
-		&-ingreso
-			// float left
-			max-width 45%
-			display inline-block
-			vertical-align top
-		&-ingresoLeft
-			display inline-block		
-
-		// &-centrosImageContainer
-		// 	height 330px
 	.Ancho
 		width 100%
 		max-width 482px
 		
-/*Desktop*/
-@media (min-width: 1100px)
 	.IndexRight
-		// float left
+		float none		
+		&-centrosTitleContainer
+			line-height 1.2em		
+			
+		/*Ingreso*/
+		&-ingreso			
+			max-width 45%
+			display inline-block
+			vertical-align top
+		&-ingresoLeft
+			display inline-block	
+		
+/*Desktop*/
+@media screen and (min-width: 1100px)
+	.Ancho
 		// max-width 570px
+		// max-width 650px
+		// width 100%
+		width 650px
+		max-width none
+		float left
+
+	.IndexRight		
 		max-width 650px
 		&-ingreso
 			max-width 58%
@@ -179,29 +180,31 @@
 		&-button
 			padding 0 .5em
 		
-		// &-form
-		// 	height 90px
-		// 	line-height 90px
 		&-centros
 			text-align left
 		&-centrosImageContainer
-			float left
-			// height 330px
+			float left			
 			width 332px
 			height 188px		
 			&:first-child				
 				width 318px
+		&-centrosSlider
+			width auto
+		// 	display flex
 								
-	.Ancho
-		max-width 650px
-		width 100%
-		float left
+	
+		
 @media (min-width: 1280px)
 	.IndexRight
 		&-ingreso			
 			max-width 65%
 		
 @media (min-width: 1485px)
+	.Ancho
+		max-width none
+		width 1040px
+		float left
+		
 	.IndexRight
 		float left
 		&-ingreso
@@ -221,10 +224,8 @@
 			height 330px
 			&:first-child
 				width auto
-	.Ancho
-		max-width none
-		width 1040px
-		float left
+		&-centrosImage
+			width auto	
 
 /*estilos OWL*/
 
