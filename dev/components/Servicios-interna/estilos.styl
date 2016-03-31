@@ -210,6 +210,26 @@
     display: inline-block;
 }
 
+.ServInterna-buttonContainer{
+    display inline-block
+    width 100%
+}
+
+.ServInterna-buttonGris {
+    background-color $dark_gray5   
+}   
+.ServInterna-button {
+    background-color $yellow
+}  
+
+.ServInterna-buttonGris, .ServInterna-button {
+    font-weight 700
+    font-size 1.3em
+    color $white
+    padding .2em 1em
+    display inline-block
+    margin .5em    
+}
 
 @media (min-width: 480px) {
     .titulos_forms {
@@ -238,7 +258,7 @@
         width: 50%;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     #cont_info_serv_interna {
         width: 40%;
         // float: left;
@@ -286,6 +306,12 @@
     
 }
 
+@media (min-width: 1280px) {
+    #cont_info_serv_interna {        
+        width: 60%;       
+    }
+}
+
 @media (min-width: 1490px){
     #cont_info_serv_interna {
         max-width: 1043px;
@@ -293,7 +319,8 @@
         float: left;
     }
     #txt_serv_interna {
-        height: 297px;
+        height: 239px;
+        // height: 297px;
     }
     #cont_cent_serv_serv_int:before{
         content: "";

@@ -19,18 +19,19 @@
 		position relative
 		display inline-block
 		margin 1em 0
+		vertical-align top
 	&-list
 		display none
 		&._current
 			display block
 	&-item
 		background-color $light_gray3
-		max-width 352px
-		height 574px
+		max-width 313px
+		min-height 574px
 		position relative
 		display inline-block
 		box-shadow 5px 5px 10px rgba(0,0,0,0.1)
-		margin 1em .4em
+		margin 1em
 	&-imageContainer
 		width 276px
 		height 276px
@@ -41,7 +42,8 @@
 		font-size 2em
 		margin 0
 	&-itemBorde
-		width 357px
+		width 100%
+		max-width 357px
 		height 3px
 		background-color $light_gray
 		display inline-block
@@ -107,11 +109,19 @@
 		top 10px
 		right 10px
 		display inline-block
+			
 /*Desktop*/
 @media (min-width: 1100px)
 	.Llantas2
 		margin-top 120px
-		&-shadow			
-			&:hover				
+		&-shadow
+			&:hover
 				.Llantas2-shadowButton2
 					display inline-block
+
+@media (min-width: 1280px)
+	.Llantas2
+		&-item
+			max-width 352px
+			height 574px
+			margin 1em .4em

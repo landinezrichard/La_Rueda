@@ -5,8 +5,12 @@
 		margin .5em
 		display inline-block
 		box-sizing border-box
-	&-tabsContainer
 		border 1px solid $light_gray
+		
+	/*Pestañas*/
+	&-tabsContainer
+		// border 1px solid $light_gray
+		border-right 1px solid $light_gray
 		display inline-block
 		box-sizing border-box
 		width 100%
@@ -87,7 +91,8 @@
 	/*imagen derecha*/	
 	&-imageDesc
 		display inline-block
-		border 1px solid $light_gray
+		// border 1px solid $light_gray
+		border-left 1px solid $light_gray
 		vertical-align top
 		width 100%
 		box-sizing border-box
@@ -115,7 +120,7 @@
 		font-size 1.45em
 		padding .3em 1.2em
 		margin 0 .3em
-		border-bottom 1px dotted	
+		border-bottom 1px dotted
 		display inline-block
 		margin .5em .3em
 	&-fb
@@ -142,33 +147,30 @@
 			min-height 460px
 			
 		&-tabsContainer
-			// float left
+			float left
 			height 100%
 			max-width 450px
 			width 450px
 			
 		&-tabsItem			
 			font-size 1.56rem
-		&-tabsItemLink
-			padding .5em
-			font-size 1.2rem
-			width 148px			
-		
+		&-tabsItemLink			
+			width 148px
+		/*Informacion dentro de cad pestaña*/
+		&-caract
+			font-size 1.56em			
+		/*Imagen derecha*/
 		&-imageDesc
-			// float left
+			float left
 			width 400px
 			height 100%
 			
-		/*Informacion dentro de cad pestaña*/
-		&-caract
-			font-size 1.56em
+		
 /*Desktop*/
-@media (min-width: 1116px)
+@media (min-width: 1280px)
 	.Llantas3
-		&-info
-			margin 3em 3em 1em
-			max-width 1335px
-			height 540px
+		&-info			
+			height 555px
 			
 		&-tabsContainer
 			float left
@@ -176,30 +178,25 @@
 			max-width 480px
 			width 480px
 			
-		&-tabsItemLink
-			padding .5em
-			font-size 1.2rem
-			width 158px			
-		
+		&-tabsItemLink			
+			width 158px
+		/*imagen derecha*/
 		&-imageDesc
-			float left
-			width 536px
-			height 100%
+			float left			
+			width 536px			
 /*Desktop*/
-@media (min-width: 1300px)
+@media (min-width: 1440px)
 	.Llantas3
 		&-info
 			margin 3em 3em 1em
-			max-width 1335px
-			height 626px
+			height 560px
 			
 		&-tabsContainer
 			float left
 			height 100%			
 			max-width 630px
 			width 630px
-		&-tabsItemLink
-			padding .5em
+		&-tabsItemLink			
 			font-size 1.56rem
 			width 208px
 			&:after
@@ -223,6 +220,5 @@
 				left 45%
 		
 		&-imageDesc
-			float left
-			width 536px
+			float left			
 			height 100%

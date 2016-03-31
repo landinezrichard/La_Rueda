@@ -30,8 +30,8 @@
 		width 100%
 	&-item
 		background-color rgba(255,255,255,.70)
-		max-width 388px
-		height 609px
+		max-width 313px
+		min-height 609px
 		position relative
 		display inline-block
 		box-shadow 5px 5px 10px rgba(0,0,0,0.1)
@@ -41,7 +41,8 @@
 		font-size 2.56em
 		margin 0
 	&-itemBorde
-		width 357px
+		width 100%
+		max-width 357px
 		height 3px
 		background-color $light_gray
 		display inline-block
@@ -53,8 +54,8 @@
 		margin .5em
 	&-imageContainer
 		border 1px solid $light_gray
-		width 364px
-		height 370px
+		max-width 364px
+		// height 370px
 		margin .5em
 	&-button
 		color $white
@@ -101,6 +102,12 @@
 		top 230px
 		right 22px
 		display inline-block
+		
+@media (min-width: 1024px)
+	.Destacados
+		&-item			
+			max-width 388px
+			min-height 609px
 
 /*Tablet*/
 @media (min-width: 1270px)
@@ -110,14 +117,10 @@
 			
 /*Estilos Botones Carrusel*/
 
-.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable
-	// position absolute
-	// bottom 50%
-	// left 0
-	// right 0
+.Destacados-list.owl-carousel.owl-theme .owl-controls.clickable	
 	margin 0 auto
 	max-width 1480px
-	// z-index 2
+	
 	
 .Destacados-list.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons div
 	width 50px
