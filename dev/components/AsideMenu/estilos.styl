@@ -1,6 +1,6 @@
 .AsideMenu
 	background-color $dark_gray
-	display inline-block	
+	display inline-block
 	width 100%
 /*Tablet*/
 // @media (min-width: 768px)
@@ -11,10 +11,17 @@
 @media (min-width: 840px)
 	.AsideMenu
 		float left
-		// max-width 410px
-		width 405px
-/*Dektop*/
-@media (min-width: 1495px)
+		min-width 388px
+		max-width 410px
+		// width 405px
+		width 50%
+		margin-left 2%		
+@media (min-width: 1100px)
 	.AsideMenu
-		max-width 437px
-		min-height 547px
+		width 405px
+		margin-left 0
+@media (min-width: 1480px)
+	.AsideMenu
+		width 100%
+		max-width 430px
+		min-height 547px	

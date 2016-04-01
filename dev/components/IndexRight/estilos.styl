@@ -187,11 +187,13 @@
 	.IndexRight
 		/*Ingreso*/
 		&-ingreso
-			width 45%
+			width 42.5%
 			height 524px
 			padding-top 65px
 			margin-top 0
 			box-sizing border-box
+			float right
+			margin-right 2.5%
 		&-ingresoLeft
 			margin-bottom 20px
 		&-button
@@ -213,7 +215,8 @@
 			width 58%
 			height auto
 			padding-top inherit			
-			// float left
+			float left
+			margin-right 0
 		&-ingresoLeft
 			margin-bottom 0		
 		&-button
@@ -247,10 +250,12 @@
 		&-centrosTitleContainer			
 			margin 1em 0
 		
-@media (min-width: 1440px)		
+@media (min-width: 1480px)		
 	.IndexRight		
 		&-ingreso
-			width 65%			
+			width auto
+			// max-width 1043px
+			// width 65%
 		
 		&-button
 			padding 0 1.7em
@@ -259,19 +264,19 @@
 		&-flecha
 			display inline-block
 		/*Centros*/
-		&-centros
+		&-centros			
 			width 65%
 		&-centrosBorde
 			width 744px
 			
 		&-centrosImageContainer
 			width 50%
-			// min-height 330px
-			min-height 255px
+			min-height 330px
+			// min-height 255px
 			&:first-child
 				width 50%
-		// &-centrosImage
-		// 	// min-height 330px
+		&-centrosImage
+			min-height 330px
 		// 	min-height inherit
 
 /*estilos OWL*/

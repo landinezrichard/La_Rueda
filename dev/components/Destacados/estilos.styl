@@ -21,9 +21,11 @@
 		background-color $light_gray
 		display inline-block		
 	&-list
-		width 100%
+		// width 100%
 		max-width 1480px
 		float left
+		width 90% !important
+		margin 0 5%
 		/*Revisar para centrar*/
 		// margin 0 30px
 		// display inline-block !important
@@ -117,6 +119,11 @@
 	.Destacados
 		&-TitleContainer
 			width 357px
+
+@media (min-width: 1480px)
+	.Destacados
+		&-list
+			width 100%
 			
 /*Estilos Botones Carrusel*/
 
