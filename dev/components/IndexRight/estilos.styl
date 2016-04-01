@@ -1,18 +1,18 @@
-.Ancho
+.centrosSlider
+	display inline-block !important
 	width 100%
-	max-width 320px
-	display inline-block
+	max-width 360px
+	box-sizing border-box
 
 /*INDEXRIGHT*/
-.IndexRight
-	display inline-block
-	float left
-	max-width 100%
+.IndexRight	
 	
 	/*Ingreso*/
 	&-ingreso
+		display inline-block
+		width 100%
 		background-color $light_gray3
-		margin-top 1.06em
+		margin-top 1.06em		
 	&-ingresoLeft
 		display inline-block
 		vertical-align middle
@@ -66,10 +66,13 @@
 		
 	/*Slider Centros*/
 	&-centros
-		max-width 1040px
+		display inline-block
+		width 100%
+		// max-width 1040px
 	&-centrosTitleContainer
 		display inline-block
 		margin 1em 0
+		width 100%
 	&-centrosTitle
 		margin 1em .5em 0
 		font-weight 300
@@ -83,14 +86,22 @@
 		display inline-block
 		margin-left .5em
 	&-centrosSlider
-		text-align center		
-		width 100%
+		text-align center
+		display inline-block		
+		width 100%		
 		float left
+		
 	&-centrosImageContainer
 		margin 0
 		display inline-block
 		vertical-align middle
 		position relative
+		
+	&-centrosImageContainer
+		width 306px
+		max-height 216px
+		&:first-child
+			width 306px
 		
 	&-centrosImage
 		width 100%
@@ -143,89 +154,125 @@
 		font-size 1.58em
 		margin-left .5em
 
+@media (min-width: 480px)
+	.centrosSlider
+		max-width 360px
+	.IndexRight
+		&-centrosImageContainer
+			width 360px
+			max-height 216px
+			&:first-child
+				width 360px
 /*Tablet*/
 @media (min-width: 768px)
-	.Ancho
-		width 100%
-		max-width 482px
-		
 	.IndexRight
-		float none		
 		&-centrosTitleContainer
-			line-height 1.2em		
+			line-height 1.2em
 			
 		/*Ingreso*/
-		&-ingreso			
-			max-width 45%
+		&-ingreso
+			// width 45%
 			display inline-block
 			vertical-align top
+			float left
 		&-ingresoLeft
-			display inline-block	
-		
+			display inline-block
+			
+		/*slider*/
+		// &-centrosSlider
+		// 	max-width 482px	
+@media (min-width: 840px)
+	.centrosSlider	
+		max-width none
+	.IndexRight
+		/*Ingreso*/
+		&-ingreso
+			width 45%
+			height 524px
+			padding-top 65px
+			margin-top 0
+			box-sizing border-box
+		&-ingresoLeft
+			margin-bottom 20px
+		&-button
+			margin 22px 0 50px
+		&-centrosImageContainer
+			float left
+			width 50%
+			max-height 300px
+			&:first-child
+				width 50%
+		&-centrosImage
+			min-height 300px
+
 /*Desktop*/
 @media screen and (min-width: 1100px)
-	.Ancho
-		// max-width 570px
-		// max-width 650px
-		// width 100%
-		width 650px
-		max-width none
-		float left
-
-	.IndexRight		
-		max-width 650px
+	.IndexRight
+		
 		&-ingreso
-			max-width 58%
-			float left			
+			width 58%
+			height auto
+			padding-top inherit			
+			// float left
+		&-ingresoLeft
+			margin-bottom 0		
 		&-button
 			padding 0 .5em
 		
 		&-centros
 			text-align left
+			float left
+			width 58%
+		&-centrosTitleContainer
+			margin 0
 		&-centrosImageContainer
-			float left			
-			width 332px
-			height 188px		
-			&:first-child				
-				width 318px
-		&-centrosSlider
-			width auto
-		// 	display flex
-								
-	
+			float left
+			width 50%
+			max-height 216px
+			&:first-child
+				width 50%
+		&-centrosImage
+			min-height 216px
+		
+		&-button
+			margin 0	
 		
 @media (min-width: 1280px)
 	.IndexRight
-		&-ingreso			
-			max-width 65%
-		
-@media (min-width: 1485px)
-	.Ancho
-		max-width none
-		width 1040px
-		float left
-		
-	.IndexRight
-		float left
 		&-ingreso
-			max-width none			
-			float left
+			width 60%
+			margin-top 1.06em
+		&-centros
+			width 60%
+		&-centrosTitleContainer			
+			margin 1em 0
+		
+@media (min-width: 1440px)		
+	.IndexRight		
+		&-ingreso
+			width 65%			
+		
 		&-button
 			padding 0 1.7em
 		&-flecha--mobile
 			display none
 		&-flecha
 			display inline-block
+		/*Centros*/
+		&-centros
+			width 65%
 		&-centrosBorde
 			width 744px
 			
 		&-centrosImageContainer
-			width auto
-			height 330px
+			width 50%
+			// min-height 330px
+			min-height 255px
 			&:first-child
-				width auto
-		&-centrosImage
-			width auto	
+				width 50%
+		// &-centrosImage
+		// 	// min-height 330px
+		// 	min-height inherit
 
 /*estilos OWL*/
 

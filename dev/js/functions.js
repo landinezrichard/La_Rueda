@@ -15,7 +15,7 @@ $(document).ready(function() {
 		pagination: false
 	});	
 
-	$('.centrosSlider.owl-carousel').owlCarousel({
+	$('.centrosSlider').owlCarousel({
 		itemsCustom: [
 			[0, 1]
 		],
