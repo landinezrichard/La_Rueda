@@ -11,10 +11,12 @@
 	transition all .3s ease
 	
 	&-item
+	&-itemLink
+		font-size 1.3rem
+	
+	&-item
 		display inline-block
-		margin 0 0
-		font-size 1.56rem
-		
+		margin 0 0		
 	
 	&-itemLink
 		cursor pointer
@@ -23,8 +25,7 @@
 		float left
 		text-decoration none
 		color $white
-		border-bottom 3px solid $white
-		font-size 1.56rem
+		border-bottom 3px solid $white		
 		
 		&:after
 			content ""
@@ -34,23 +35,7 @@
 			display inline-block
 			position absolute
 			top 52px
-			left 45px
-
-		// &:hover
-		// &:focus
-		// 	color $yellow
-		// 	border-bottom 3px solid $yellow
-			
-		// 	.Tabs-itemLink
-		// 		&:after
-		// 			content ""
-		// 			border-left 7px solid transparent
-		// 			border-right 7px solid transparent
-		// 			border-top 9px solid $yellow
-		// 			display inline-block
-		// 			position absolute
-		// 			top 65px
-		// 			left 80px
+			left 40px
 				
 		&:focus
 			outline 0
@@ -72,7 +57,7 @@
 			display inline-block
 			position absolute
 			top 52px
-			left 45px
+			left 40px
 /*Tablet*/
 @media (min-width: 768px)
 	.Tabs
@@ -80,7 +65,35 @@
 			padding .4em 1.9em .1em
 			
 			&:after
+				top 44px
+				left 65px
+		&--is-selected
+			&:after
+				top 44px
+				left 65px
+				
+@media (min-width: 840px)
+	.Tabs
+		&-item
+		&-itemLink
+			font-size 1.3rem			
+			
+/*Desktop*/
+@media screen and (min-width: 1100px)
+	.Tabs
+		&-item
+		&-itemLink
+			font-size 1.56rem
+			&:after
 				left 80px
+				top 52px
 		&--is-selected
 			&:after
 				left 80px
+				top 52px
+
+@media screen and (min-width: 1140px)
+	.Tabs
+		&-item
+		&-itemLink
+			font-size 1.56rem

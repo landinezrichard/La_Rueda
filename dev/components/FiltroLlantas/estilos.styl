@@ -28,6 +28,9 @@
 		font-weight 300
 		font-size 1.37em
 		margin 1em .1em .4em
+	&-select
+	&-selectDimension
+		font-size 1.2em
 		
 	&-select
 		border none
@@ -41,7 +44,7 @@
 		color $white
 		padding .2em .5em
 		font-weight 300
-		font-size 1.31em
+		
 		& option
 			font-weight 300
 	&-option
@@ -54,7 +57,7 @@
 		padding .3em
 		margin .5em .1em
 		display block
-		font-size 1.5em
+		font-size 1.3em
 		text-align center
 		
 	&-selectDimension
@@ -66,7 +69,7 @@
 		display inline-block		
 		width 100%
 		font-weight 300
-		font-size 1.31em
+		
 	&-buttonText
 	&-buttonIcon
 		vertical-align middle
@@ -78,6 +81,9 @@
 @media (min-width: 840px)
 	.select
 		width 100%
+	.select--linea
+		&:nth-child(2n+1)
+			margin .3em .6em
 	.FiltroLlantas
 		&-button
 			width 97%
@@ -86,23 +92,25 @@
 		&-buttonIcon
 			margin-left .5em
 			font-size 1.3em
+		&-select
+		&-selectDimension
+			font-size 1.2em
 /*Desktop*/
 @media (min-width: 900px)
 	.select
 		width 360px
-		display inline-block
-	.select--linea
-		&:nth-child(2n+1)
-			margin .3em .6em
+		display inline-block	
 	.FiltroLlantas
 		&-button
-			width 350px
-	// .FiltroLlantas
-	// 	&-form
-	// 	&-formDimension
-	// 		display inline-block
-	// 		width 40%
-	// 		vertical-align top
+			width 350px		
+		
+@media (min-width: 1280px)
+	.FiltroLlantas
+		&-button
+			font-size 1.5em
+		&-select
+		&-selectDimension
+			font-size 1.31em
 
 @media (min-width: 1495px)
 	.select

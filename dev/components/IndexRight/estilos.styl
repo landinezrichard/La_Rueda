@@ -46,6 +46,7 @@
 		margin 0
 		padding 0
 		border 0
+		vertical-align middle
 	&-input
 		border 1px solid $white
 		background-color transparent
@@ -56,13 +57,16 @@
 		padding .3em
 		width 244px
 	&-button
-		height 90px
+		height 55px
 		border none
 		color $white
 		background-color $yellow
 		font-weight 700
 		font-size 1.32em
-		padding 0 1.7em		
+		padding 0 1.7em	
+		margin-bottom 15px
+		vertical-align middle
+		
 		
 	/*Slider Centros*/
 	&-centros
@@ -163,7 +167,7 @@
 			max-height 216px
 			&:first-child
 				width 360px
-/*Tablet*/
+
 @media (min-width: 768px)
 	.IndexRight
 		&-centrosTitleContainer
@@ -177,6 +181,8 @@
 			float left
 		&-ingresoLeft
 			display inline-block
+		&-button
+			margin-bottom 0
 			
 		/*slider*/
 		// &-centrosSlider
@@ -189,14 +195,17 @@
 		&-ingreso
 			width 42.5%
 			height 524px
-			padding-top 65px
+			padding-top 40px
 			margin-top 0
 			box-sizing border-box
 			float right
 			margin-right 2.5%
 		&-ingresoLeft
-			margin-bottom 20px
+			margin-bottom 45px
+		&-field
+			margin 25px 0 0
 		&-button
+			height 64px
 			margin 22px 0 50px
 		&-centrosImageContainer
 			float left
@@ -218,9 +227,13 @@
 			float left
 			margin-right 0
 		&-ingresoLeft
-			margin-bottom 0
+			margin-bottom 30px
+		&-field
+			width 45%			
+			margin 0
 		&-button
-			padding 0 .5em
+			padding 0 .5em			
+			height 90px
 		
 		&-centros
 			text-align left
@@ -228,6 +241,8 @@
 			width 56%
 		&-centrosTitleContainer
 			margin 0
+		&-centrosTitle
+			font-size 1.8em
 		&-centrosImageContainer
 			float left
 			width 50%
@@ -249,17 +264,23 @@
 		&-ingreso
 			width 60%
 			margin-top 1.06em
+		&-ingresoLeft
+			margin-bottom 0
 		&-centros
 			width 60%
 		&-centrosTitleContainer			
 			margin 1em 0
+		&-centrosTitle
+			font-size 2em
 		
-@media (min-width: 1480px)		
+@media (min-width: 1480px)
 	.IndexRight		
 		&-ingreso
 			width auto
 			// max-width 1043px
 			// width 65%
+		&-field
+			width auto
 		
 		&-button
 			padding 0 1.7em
