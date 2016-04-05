@@ -129,8 +129,8 @@
     width: auto;
     display: inline-block;
     border: 1px solid #fff;
-    margin: 25% 0 5% 0;
-    font-size: 30px;
+    // margin: 25% 0 5% 0;
+    margin: 5% 10%;    
     color: #fff;
     padding: 10px 30px;
 }
@@ -138,8 +138,7 @@
     content: "";
     background: url(../images/diseno/02-servicios/flecha_blanca.png) no-repeat center;
     display: inline-block;
-    vertical-align: middle;
-    width: 44px;
+    vertical-align: middle;    
     height: 24px;
     margin:0 0 5px 10px;
     transform: rotate(-90deg);
@@ -147,6 +146,31 @@
     -moz-transform: rotate(-90deg);
 }
 
+.cotiz_serv {
+    width: auto;
+    display: inline-block;
+    border: 1px solid #fff;    
+    color: #fff;  
+    margin: 10% 10% 5%;
+    padding: 10px 30px;
+    background: $yellow;
+}
+.cotiz_serv:after{
+    content: "";
+    background: url(../images/diseno/02-servicios/flecha_blanca.png) no-repeat center;
+    display: inline-block;
+    vertical-align: middle;    
+    height: 24px;
+    margin:0 0 5px 10px;
+    transform: rotate(-90deg);    
+}
+.ver_serv, .cotiz_serv{
+    font-size: 15px;
+    cursor: pointer;
+}
+.ver_serv:after, .cotiz_serv:after{
+    width: 18px;
+}
 @media (min-width: 600px) {    
 
     .btn_pestana_serv {
@@ -192,7 +216,7 @@
         font-size: 22px;
         font-weight: 600;
         line-height: inherit;
-    }
+    }    
 }   
 
 @media (min-width: 960px) {
@@ -211,6 +235,12 @@
     }
     .nombre_serv{
         font-size:30px ;
+    }
+    .ver_serv, .cotiz_serv{
+        font-size: 30px;
+    }
+    .ver_serv:after, .cotiz_serv:after{
+        width: 44px;
     }
     
 }
