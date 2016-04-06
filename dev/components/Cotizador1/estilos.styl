@@ -12,14 +12,14 @@
 		width 176px
 		height 180px
 		border 1px solid $light_gray4
-		display inline-block		
+		display inline-block
 	&-image
 		margin 0 16px
 	&-itemInfo
 		display inline-block
 		text-align left	
 		width 320px
-		margin 0 1em		
+		margin 0 1em
 	&-itemTitle
 		font-weight 400
 		font-size 2em
@@ -42,7 +42,7 @@
 	&-input
 		margin .7em 10px
 	&-eliminar
-		display inline-block		
+		display inline-block
 		max-width 200px
 	&-eliminarButton
 		font-weight 400
@@ -63,12 +63,12 @@
 		line-height 35px
 		font-size 1.5rem
 		vertical-align middle
-	
+
 	&-imageContainer
 	&-itemInfo
 	&-eliminar
 		vertical-align top
-		
+
 	&-volver
 		font-weight 700
 		font-size 2.01em
@@ -77,22 +77,17 @@
 		width 320px
 		padding 0 .5em 0 0
 		margin-right 25px
-	&-cotizar
-		font-weight 700
-		font-size 2.01em
-		color $white
-		background-color $yellow
-		width 217px
-		padding 0 .5em
-	&-volver	
+
+	&-volver
 	&-cotizar
 		display inline-block
 		margin .5em
-		
+		cursor pointer
+
 	&-mensaje
 		font-weight 400
 		font-size 2.01em
-		
+
 	&-volver2
 		font-weight 700
 		font-size 2.01em
@@ -101,6 +96,45 @@
 		width 320px
 		padding 0 .5em 0 0
 		margin-right 25px
+	&-actions
+		display inline-block
+		width 100%
+
+	&-actionsText
+		font-weight 700
+		font-size 28px
+		width 100%
+		display inline-block
+
+	&-botonera
+		display inline-block
+		width 100%
+
+	&-cotizar
+		font-weight 700
+		font-size 2.01em
+		color $white
+		background-color $yellow
+		width 217px
+		padding 0 .5em
+		display inline-block
+		box-sizing border-box
+
+	// &-actionsButtons
+	// 	display inline-block
+	// 	width 100%
+	// 	margin 1em 0
+
+	&-button
+		display inline-block
+		font-weight 700
+		font-size 2.01em
+		color $white
+		background-color black
+		width 70%
+		padding 7px 0
+		margin .2em
+		cursor pointer
 
 .Cotizador3
 	&-mensajeBold
@@ -118,19 +152,37 @@
 		vertical-align top
 	&-mensajeAmarillo
 		color $yellow
-
+@media (min-width: 480px)
+	.Cotizador1
+		&-button
+			width 45%
+@media (min-width: 720px)
+	.Cotizador1
+		&-button
+			width 23%
 /*Tablet*/
 @media (min-width: 768px)
-	.Cotizador1		
-		&-imageContainer			
-			float left		
-		&-itemInfo			
-			float left		
-		&-itemCantidad			
-			float left		
-		&-eliminar			
+	.Cotizador1
+		&-imageContainer
+			float left
+		&-itemInfo
+			float left
+		&-itemCantidad
+			float left
+		&-eliminar
 			float right
-		&-actions
-			float right
-		&-volver			
+		// &-actions
+		// 	float right
+		&-volver
 			width 410px
+
+@media (min-width: 1280px)
+	.Cotizador1
+		&-actionsText
+			width 22%
+		&-botonera
+			width 52%
+		&-cotizar
+			width 20%
+		&-button
+			width 23%

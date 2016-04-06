@@ -16,12 +16,15 @@
             input.Cotizador-check(type='checkbox',value='autoriza', id="check1")
             label.Cotizador-label(for="check1")
               | Autorizo llanta Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores placeat vero, doloremque.
-          h5.Cotizador-contacto
-            | Comunícate
-            span.Cotizador-contactoBold
-              |  311 5416067
-          .cont_btn_enviar_forms
-            input(type='submit', value='Enviar')
+          div.Cotizador-Enviar
+            h5.Cotizador-contacto
+              | Comunícate
+              span.Cotizador-contactoBold
+                |  311 5416067
+              a.Cotizador-contactoMail(href="mailto:servicioalcliente@larueda.com.co")
+                | servicioalcliente@larueda.com.co
+            .Cotizador-contacto_enviar
+              input(type='submit', value='Enviar')
     #cont_conoce_centros
       #cont_cent_serv_contacto
         span CONOCE NUESTROS

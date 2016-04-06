@@ -35,7 +35,9 @@
 		border none
 		padding 0
 		margin 20px 0 0 0
-		float left
+		// float left
+		display inline-block
+		width 100%
 	&-check
 		appearance none
 		border 1px solid $gray
@@ -48,33 +50,100 @@
 		font-weight 400
 		font-size 1.12em
 		color $gray
-		margin-left 0em
+		margin-left 5%
 		display inline-block
-		max-width 220px
+		max-width 80%
+		// max-width 220px
+			
+	&-Enviar
+		display inline-block
+		width 100%
+		margin-top 20px
 		
 	&-contacto
-		float left
-		margin 45px 0 0 0
+		// float left
+		// margin 45px 0 0 0
+		margin 10px
 		font-weight 400
 		font-size 1.5em
 		color $gray2
+		width 233px
+		display inline-block
+		vertical-align middle
 	&-contactoBold
 		font-weight 700		
 		color $gray2
+	/*Mail*/
+	&-contactoMail
+		display inline-block
+		width 100%
+		font-weight 400
+		font-size 1.12rem
+		color $gray
+	/*boton enviar*/
+	&-contacto_enviar
+		width 254px
+		// float right
+		border 1px solid $yellow
+		position relative
+		// margin 40px 0 0
+		margin 10px
+		display inline-block
+		vertical-align middle
+		&:after
+			content ""
+			float right
+			width 69px
+			height 60px
+			background url(../images/diseno/02-servicios/flecha_negra.png) no-repeat 50% #f5a118
+		& input
+			width 100%
+			float left
+			font-size 28px
+			height 60px
+			background transparent
+			border none
+			border-right 69px solid transparent
+			position absolute
+			top 0
+			left 0
+			box-sizing border-box
+			transition all .3s
+			&:hover
+				background $yellow
 
 @media (min-width: 768px)
 	.Cotizador
-		&-label
-			max-width 260px
-
-@media (min-width: 963px)
+		&-contacto
+			margin 10px 5px 10px 0
+		&-contacto_enviar
+			margin 10px 0 10px 5px
+@media (min-width: 1024px)
 	.Cotizador
-		&-label	
-			max-width 300px
+		&-contacto
+			font-size 1.3em			
+		&-contacto_enviar
+			width 176px
+// 		&-label
+// 			max-width 260px
+
+// @media (min-width: 963px)
+// 	.Cotizador
+// 		&-label	
+// 			max-width 300px
 /*Desktop*/
 @media (min-width: 1100px)
 	.Cotizador
 		margin-top 120px
-		&-label
-			margin-left 1em
-			max-width 545px
+		// &-label
+		// 	margin-left 1em
+		// 	max-width 545px
+		&-Enviar
+			margin-top 45px
+		
+@media (min-width: 1280px)
+	.Cotizador
+		&-contacto
+			font-size 1.5em
+		&-contacto_enviar
+			width 254px
