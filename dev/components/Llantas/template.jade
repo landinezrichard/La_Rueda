@@ -6,27 +6,54 @@ section.Llantas
 				h1.Llantas-title
 					|	LLANTAS
 				div.Llantas-borde
-			div.Llantas-containerText
-				h3.Llantas-containerLight
-					|	Lorem Ipsum es simplemente
-				h3.Llantas-containerBold
-					|	TEXTO DE RELLENO DE LAS IMPRENTAS Y ARCHIVOS
-				div.Llantas-bordeFull
+		//- div.Llantas-containerText
+		//- 	h3.Llantas-containerLight
+		//- 		|	Lorem Ipsum es simplemente
+		//- 	h3.Llantas-containerBold
+		//- 		|	TEXTO DE RELLENO DE LAS IMPRENTAS Y ARCHIVOS
+		//- 	div.Llantas-bordeFull
 section.Llantas-SubInfo
 	div.u-centrar
-		div.Llantas-aside
+		div.Llantas-float
+			//- div.Llantas-aside
 			include ../AsideMenu/template.jade
-		div.Llantas-info
-			div.Llantas-containerTextMobil
-				h3.Llantas-containerLight
-					|	Lorem Ipsum es simplemente
-				h3.Llantas-containerBold
-					|	TEXTO DE RELLENO DE LAS IMPRENTAS Y ARCHIVOS
-				div.Llantas-bordeFull
-			div.Llantas-redBox
-					|	50%
-			h3.Llantas-descuento
-				|	DE DESCUENTO
-			p.Llantas-descrip
-				|	en la segunda llanta según referencias seleccionadas
+			div.Llantas-info
+				div.Llantas-LineasTitleContainer
+					h4.Llantas-LineasTitle
+						|	LÍNEAS DE PRODUCTO
+					div.Llantas-LineasTitleborde
+				div.LineasProd-list.Llantas-Lineas
+					a(href="#")
+						figure.LineasProd-imageContainer
+							img.LineasProd-image(src="../images/auto.jpg")
+							div.LineasProd-shadow
+								div.LineasProd-shadowText
+									span.LineasProd-button
+										span.LineasProd-buttonText
+											|	AUTOMÓVIL Y CAMIONETA
+										span.icon-chevron-thin-right.LineasProd-buttonIcon
+					a(href="#")
+						figure.LineasProd-imageContainer
+							img.LineasProd-image(src="../images/camion.jpg")
+							div.LineasProd-shadow
+								div.LineasProd-shadowText
+									span.LineasProd-button
+										span.LineasProd-buttonText
+											|	TRANSPORTE
+										span.icon-chevron-thin-right.LineasProd-buttonIcon
+				div.Llantas-promoBanner
+					img(src="http://lorempixel.com/1024/290/transport")
+			//- 	div.Llantas-containerTextMobil
+			//- 		h3.Llantas-containerLight
+			//- 			|	Lorem Ipsum es simplemente
+			//- 		h3.Llantas-containerBold
+			//- 			|	TEXTO DE RELLENO DE LAS IMPRENTAS Y ARCHIVOS
+			//- 		div.Llantas-bordeFull
+
+			//- div.Llantas-redBox
+			//- 		|	50%
+			//- h3.Llantas-descuento
+			//- 	|	DE DESCUENTO
+			//- p.Llantas-descrip
+			//- 	|	en la segunda llanta según referencias seleccionadas
 div.Clear

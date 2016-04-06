@@ -1,7 +1,9 @@
 
 #cont_agregado {
-    width: 600px;
-    height: 400px;
+    // width: 600px;
+    // height: 400px;
+    width: 100%;
+    height: auto;
     display: inline-block;
     text-align: center;
 }
@@ -15,8 +17,49 @@
 #txt_agregado {
     width: 80%;
     display: inline-block;
-    font-size: 39px;
+    // font-size: 39px;
+    font-size: 28px;
     color: #262626;
+    font-weight: 300;
+}
+
+.Texto-agregado {
+    width: 80%;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 28px;   
+}
+
+.Agegado-features{
+    display inline-block
+    width 100%
+    margin 1em 0
+}
+
+.Agregado-volver {
+    display inline-block
+    font-weight 700
+    font-size 2.01em
+    color $white
+    background-color black
+    width 32%
+    padding 7px 0
+    margin .2em
+    cursor pointer  
+}
+
+// .Agregado-volver:last-child {
+//     margin 0.2em 1em 0.5em
+// }
+
+.Agregado-cotizar {
+    display inline-block
+    font-weight 700
+    font-size 2.01em
+    color $white
+    background-color $yellow
+    width 380px
+    padding 7px 0
 }
 
 #btn_agregado {
@@ -33,5 +76,6 @@
 /*tamaño ventana modal agregado cotizador*/
 @media only screen and (min-width: 641px)
     div[data-remodal-id="modalAgregado"]{
-        max-width: 742px;
+        max-width: 640px;
+        padding: 20px;
     }

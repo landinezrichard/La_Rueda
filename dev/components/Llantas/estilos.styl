@@ -2,6 +2,7 @@
 .Llantas
 	&-imageContainer
 		margin 0
+		text-align center
 	&-image
 		display none
 	&-sobreIm
@@ -25,12 +26,12 @@
 		display inline-block
 	&-containerText
 		display inline-block
-		position relative
-		right 0
+		position relative		
 		background-color $full_black
 		color $white
 		border 1px solid $dark_gray5
-		width 95%		
+		width 95%
+		text-align center		
 	&-containerTextMobil
 		display none
 	&-containerLight
@@ -48,9 +49,8 @@
 		background-color $dark_gray5
 		margin-bottom .5em
 	&-info
-		margin-top 1em
-		display inline-block
-		padding 30px 0
+		margin-top 20px
+		display inline-block		
 	&-redBox
 		background-color $red
 		font-weight 700
@@ -93,6 +93,36 @@
 	&-SubInfo
 		display block
 		width 100%
+		
+	&-promoBanner
+		display none
+		width 100%		
+		background-color $full_black
+		margin 0
+		
+		& img
+			margin-bottom -5px
+			
+	&-float
+		display inline-block
+		width auto
+	&-aside
+		display inline-block
+		float left
+		
+	&-LineasTitleContainer
+			display inline-block
+			width 100%
+		&-LineasTitle
+			font-weight 400
+			font-size 2em
+			margin .5em 0 0
+		&-LineasTitleborde
+			display inline-block
+			width 80%
+			height 3px
+			background-color #d8d8d8
+	
 
 /*Tablet*/
 @media (min-width: 768px)
@@ -101,11 +131,7 @@
 			vertical-align middle
 		&-containerText
 			vertical-align middle
-		&-info
-			margin 0
-			float left
-			vertical-align top
-			width 40%
+		
 		&-descuento
 			margin .5em
 		&-descrip
@@ -113,37 +139,57 @@
 		&-containerLight
 			font-size 2em
 		&-containerBold
-			font-size 2em
-@media (min-width: 960px)
+			font-size 2.4em
+@media (min-width: 840px)
 	.Llantas
-		&-imageContainer
-			position relative
-		&-image
-			display inline
-		&-sobreIm
-			position absolute
-			top 3em
-		&-title
-			color $white		
-			margin 1em 0 .3em
 		&-containerText
 			display none
-			// HERE
+		&-info
+			margin 0
+			float right
+			vertical-align top			
+			width 48%
+			// padding 30px 0
+			max-width 430px
+			height 506px
 		&-containerTextMobil
 			display inline-block
 			background-color $full_black
 			color $white
 			border 1px solid $dark_gray5
 			width 100%
+		&-promoBanner
+			display none
+		/*lineas prod*/	
+		&-Lineas
+			& a
+				width 80% !important
+		
+		&-LineasTitle			
+			font-size 2em
+		
+@media (min-width: 960px)
+	.Llantas
+		&-imageContainer
+			position relative
+		&-image
+			display inline-block
+			margin-bottom -5px
+		&-sobreIm
+			position absolute
+			top 3em
+		&-title
+			color $white		
+			margin 1em 0 .3em					
 			
 		&-containerLight
 			font-size 2.56em
 		&-containerBold
 			font-size 2.56em
 		&-info
-			width 50%
+			max-width 532px
 			margin 0
-			float none		
+			// float none		
 			
 /*Desktop*/
 @media (min-width: 1100px)
@@ -162,7 +208,16 @@
 @media (min-width: 1280px)
 	.Llantas		
 		&-info
-			width 60%
+			width 65%
+			max-width 776px
+		/*lineas prod*/	
+		&-Lineas
+			margin 10px
+			& a
+				width 45% !important
+		&-promoBanner
+			display inline-block
+			margin 20px
 @media (min-width: 1496px)
 	.Llantas
 		&-sobreIm
@@ -171,13 +226,19 @@
 			display inline-block
 			background-color $transparencia2
 			position absolute
-			bottom 10%
+			bottom 25px
 			max-width 691px
 		&-containerTextMobil
 			display none
 		&-aside
 			float left
 			margin-top -410px
+		&-float
+			& .AsideMenu
+				// margin-top -410px
+				position relative
+				
 		&-info
+			width auto
 			float left
-			margin-left 100px
+			padding 0

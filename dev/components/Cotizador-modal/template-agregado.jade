@@ -1,15 +1,26 @@
 div.remodal(data-remodal-id="modalAgregado")
 	button.remodal-close(data-remodal-action="close")
 	#cont_agregado
-		.icon_agregado
-			img(src='../images/diseno/flecha_cotizado.jpg')
+		//- .icon_agregado
+		//- 	img(src='../images/diseno/flecha_cotizado.jpg')
 		#txt_agregado
 			| Tu producto ha sido agregado al cotizador
-		a.Cotizador1-volver(data-remodal-action="confirm")
-			span.Cotizador1-volverIcon.icon-chevron-thin-left
-			span.Cotizador1-volverText
-				|	COTIZAR MÁS PRODUCTOS
-		a.Cotizador1-cotizar(href="cotizador.html")
+		.Texto-agregado
+			| Deseas seguir cotizando:
+		div.Agegado-features
+			a.Agregado-volver(data-remodal-action="confirm")
+				span.Cotizador1-volverText
+					|	SERVICIOS
+			a.Agregado-volver(data-remodal-action="confirm")
+				span.Cotizador1-volverText
+					|	LLANTAS
+			a.Agregado-volver(data-remodal-action="confirm")
+				span.Cotizador1-volverText
+					|	ACEITES
+			a.Agregado-volver(data-remodal-action="confirm")
+				span.Cotizador1-volverText
+					|	BATERIAS
+		a.Agregado-cotizar(href="cotizador.html")
 			span.Cotizador1-cotizarText
 				|	COTIZAR...
 			span.Cotizador1-cotizarIcon.icon-chevron-thin-right
