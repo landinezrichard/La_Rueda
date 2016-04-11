@@ -11,8 +11,8 @@
 	width 28%
 	min-width 100px
 	color $white
-	&:nth-child(2n+1)
-		margin .3em 1em
+	padding .2em
+	box-sizing border-box
 
 .FiltroLlantas
 	text-align center
@@ -75,6 +75,15 @@
 		vertical-align middle
 	&-buttonIcon
 		font-size 1em
+		
+@media (min-width: 600px)
+	.select--linea
+		display inline-block
+		width 28%
+		min-width 100px
+		color $white
+		&:nth-child(2n+1)
+			margin .3em 1em
 		
 /*Tablet*/
 // @media (min-width: 768px)

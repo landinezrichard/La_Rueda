@@ -70,12 +70,16 @@
 }
 
 .cont_gen_otras_not {
-    width: 100%;
-    float: left;
+    // width: 100%;
+    // float: left;
+    display: inline-block !important;
+    margin: 0 5%;
+    width: 90% !important;
 }
 
 .cont_otra_not {
-    width: 95%;
+    // width: 95%;
+    width: 95%; 
     display: inline-block;
     max-width: 388px;
     background: #efefef;
@@ -83,6 +87,7 @@
     padding: 15px;
     box-shadow: 5px 5px 10px rgba(0,0,0,.2);
     position: relative;
+    // margin: 30px 2.5%;
     margin: 30px 2.5%;
     transition: all .3s;
 }
@@ -141,6 +146,39 @@
     margin: 0 0 10px 0;
 }
 
+/*Estilos Botones Carrusel*/
+
+.cont_gen_otras_not.owl-carousel.owl-theme .owl-controls.clickable{
+    margin 0 auto
+    max-width 1480px    
+}
+    
+.cont_gen_otras_not.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons div{
+    width 50px
+    height 50px
+    line-height 50px
+    padding 7px
+    background-color transparent
+    font-size 3.5em
+    text-align center
+    color $yellow    
+}
+
+.cont_gen_otras_not.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-prev, .cont_gen_otras_not.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-next{
+    position absolute
+    bottom 50%    
+}
+
+.cont_gen_otras_not.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-prev{
+    float left
+    left -27px
+}
+
+.cont_gen_otras_not.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-next{
+    float right
+    right -27px
+}
+
 @media (min-width: 800px) {
     .img_otra_not {
         display: block;
@@ -158,8 +196,20 @@
         margin: -20px 0 -25px 0;
     }
     .cont_otra_not {
-        width: 30%;
-        margin: 30px 1%;
+        // width: 30%;
+        // margin: 30px 1%;
+        width: 95%;
+        margin: 30px 2.5%;
+    }
+    
+    .cont_gen_otras_not.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-prev{
+        float left
+        left -43px
+    }
+
+    .cont_gen_otras_not.owl-carousel.owl-theme .owl-controls.clickable .owl-buttons .owl-next{
+        float right
+        right -43px
     }
     
 }
@@ -192,7 +242,9 @@
         margin: 30px 0 -25px 0;
     }
     .cont_otra_not {
-        width: 25%;
+        // width: 25%;
+        // margin: 30px 2.5%;
+        width: 95%;
         margin: 30px 2.5%;
     }
     

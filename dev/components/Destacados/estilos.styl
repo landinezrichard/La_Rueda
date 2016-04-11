@@ -12,7 +12,7 @@
 		max-width 357px
 	&-title
 		font-weight 400
-		font-size 2.56em
+		font-size 1.8em
 		margin 0
 		display inline-block
 	&-borde
@@ -36,14 +36,14 @@
 	&-item
 		background-color rgba(255,255,255,.70)
 		max-width 313px
-		min-height 609px
+		min-height 480px
 		position relative
 		display inline-block
 		box-shadow 5px 5px 10px rgba(0,0,0,0.1)
 		margin 1em
 	&-itemTitle
 		font-weight 400
-		font-size 2.56em
+		font-size 2em
 		margin 0
 	&-itemBorde
 		width 100%
@@ -56,8 +56,8 @@
 		font-size 1.43em
 		text-align left
 		color $dark_gray4
-		margin .5em
-		height 68px
+		margin .5em	
+		height 100px	
 	&-imageContainer
 		border 1px solid $light_gray
 		max-width 364px
@@ -108,12 +108,19 @@
 		top 230px
 		right 22px
 		display inline-block
+@media (min-width: 600px)
+	.Destacados
+		&-item
+			min-height 528px		
 		
 @media (min-width: 1024px)
 	.Destacados
 		&-item
 			max-width 388px
 			min-height 609px
+		&-itemDescription
+			height 95px
+			// height 68px
 
 /*Tablet*/
 @media (min-width: 1270px)
@@ -123,8 +130,12 @@
 
 @media (min-width: 1480px)
 	.Destacados
+		&-title
+			font-size 2.56em
 		&-list
 			width 100%
+		&-itemTitle
+			font-size 2.56em
 			
 /*Estilos Botones Carrusel*/
 

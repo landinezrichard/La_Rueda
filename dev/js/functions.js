@@ -39,6 +39,20 @@ $(document).ready(function() {
 		pagination: false
 	});
 
+	/*Carrusel Noticias*/
+
+	$('.cont_gen_otras_not').owlCarousel({
+		itemsCustom: [
+			[0, 1],
+			[800,2],
+			[1145,3]
+		],
+		navigation: true,
+		autoPlay: false,
+		slideSpeed: 1000,
+		pagination: false
+	});
+
 	
 
 	/*Paginación jPaginate*/
