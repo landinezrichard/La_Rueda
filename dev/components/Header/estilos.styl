@@ -10,9 +10,11 @@
 	z-index 10
 	height 4em
 	line-height 3.5em
-	// overflow hidden
-	// height 3em
-	// line-height 2.5em
+	display inline-block
+	
+	&-container
+		display inline-block
+		width 100%
 
 	&-logo
 		display inline-block
@@ -21,6 +23,10 @@
 		
 		& .Logo-link
 			font-size 4em
+			
+	&-right
+		display inline-block
+		float right
 
 	&-subMenu--mobile
 		display inline-block
