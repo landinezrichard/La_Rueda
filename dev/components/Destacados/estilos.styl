@@ -10,6 +10,7 @@
 	&-TitleContainer
 		display inline-block
 		max-width 357px
+		width 95%
 	&-title
 		font-weight 400
 		font-size 1.8em
@@ -20,15 +21,12 @@
 		height 3px
 		background-color $light_gray
 		display inline-block		
-	&-list
-		// width 100%
+	&-list		
 		max-width 1480px
 		float left
 		width 90% !important
 		margin 0 5%
-		/*Revisar para centrar*/
-		// margin 0 30px
-		// display inline-block !important
+		
 	&-itemContainer
 		position relative
 		display inline-block
@@ -43,7 +41,7 @@
 		margin 1em
 	&-itemTitle
 		font-weight 400
-		font-size 2em
+		font-size 1.73em
 		margin 0
 	&-itemBorde
 		width 100%
@@ -53,7 +51,7 @@
 		display inline-block
 	&-itemDescription
 		font-weight 300
-		font-size 1.43em
+		font-size 1.25em
 		text-align left
 		color $dark_gray4
 		margin .5em	
@@ -94,14 +92,20 @@
 
 	&-shadowButton
 		display none
-		padding .3em 1.2em
+		// padding .3em 1.2em
+		padding .3em
 		font-weight 400
-		font-size 1.69em
+		font-size 1.5em
 		color $white
 		border 2px solid $yellow
 		position absolute
 		top 50%
-		left 20%
+		// left 20%
+		left 0
+		right 0
+		margin 0 auto
+		box-sizing border-box
+		width 180px
 		
 	&-marcaContainer
 		position absolute
@@ -136,6 +140,11 @@
 			width 100%
 		&-itemTitle
 			font-size 2.56em
+		&-itemDescription
+			font-size 1.43em
+		&-shadowButton
+			font-size 1.69em
+			width 215px
 			
 /*Estilos Botones Carrusel*/
 

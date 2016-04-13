@@ -14,7 +14,7 @@
 		display inline-block
 	&-title
 		font-weight 300
-		font-size 2.56em
+		font-size 1.8em
 		color $yellow
 		margin 0
 		display inline-block
@@ -25,7 +25,7 @@
 		background-color $light_gray
 	&-description
 		font-weight 300
-		font-size 1.43em
+		font-size 1.25em
 		text-align left
 		max-width 660px
 		padding 1em
@@ -34,14 +34,14 @@
 	&-titleContainer
 	&-description
 		vertical-align middle
-		
+	/*Centros*/	
 	&-centros
 		background-color #f2f2f2
 		min-height 480px
-		padding 50px 0
+		padding 20px 0
 		
 	&-centrosInfo
-		margin 50px 0
+		margin 20px 0
 		
 	&-centrosImageContainer
 		margin 0
@@ -61,7 +61,7 @@
 		display inline-block
 	&-centrosTitle
 		font-weight 300
-		font-size 2.56em		
+		font-size 1.8em		
 		margin 0
 		display inline-block
 	&-centrosRegular
@@ -73,7 +73,7 @@
 		background-color $light_gray
 	&-centrosDescription
 		font-weight 300
-		font-size 2.18em
+		font-size 1.25em
 		text-align left
 		max-width 740px		
 		display inline-block
@@ -88,9 +88,11 @@
 		font-size 1.62em
 		display inline-block
 		float right
-		
+	
+	/*Alianzas*/
+
 	&-alianzasTitleBlock
-		margin 50px 0
+		margin 20px 0
 	
 	&-alianzasTitleContainer
 		width 290px
@@ -98,8 +100,9 @@
 		
 	&-alianzasTitle
 		font-weight 400
-		font-size 2.56em
+		font-size 1.8em
 		margin 0
+		text-transform uppercase
 		
 	&-alianzasTitleBorde
 		width 100%
@@ -129,7 +132,7 @@
 		right 0px
 		top 100px
 		font-weight 300
-		font-size 2.25em
+		font-size 1.6em
 			
 /*Desktop*/
 @media (min-width: 1270px)
@@ -163,10 +166,28 @@
 			left 222px
 			color $white
 			text-align left
-		&-title			
-			margin 0 1.5em			
+		&-title
+			margin 0 1.5em
+			font-size 2.56em
 		&-description
 			padding 0
 			display block
+			font-size 1.43em
+		/*Centros*/
+		&-centros
+			padding 50px 0			
+		&-centrosInfo
+			margin 50px 0
 		&-centrosText
 			margin 0 80px
+		&-centrosTitle
+			font-size 2.56em
+		&-centrosDescription
+			font-size 2.18em
+		/*Alianzas*/
+		&-alianzasTitleBlock
+			margin 50px 0
+		&-alianzasTitle
+			font-size 2.56em
+		&-alianzasCaption		
+			font-size 2.25em

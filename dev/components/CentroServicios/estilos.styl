@@ -8,8 +8,7 @@
 
 .titulos-internas {
     width: auto;
-    display: inline-block;
-    // font-size: 30px;
+    display: inline-block;    
     font-size: 25px;    
     font-weight: 300;
     padding: 0 5%;
@@ -135,6 +134,7 @@
     background-size: 100% auto;
     display: inline-block;
     margin: 0 20px;
+    vertical-align:top;
 }
 .cont-serv-centro{
     width: 100%;
@@ -150,7 +150,8 @@
     border: 1px solid #fff;
     background: #282828 url("../images/down-arrow.png") no-repeat 95% center;
     text-align: left;
-    font-size: 21px;
+    // font-size: 21px;
+    font-size: 18px;
     font-weight: bold;
     color: #fff;
     position: relative;
@@ -188,9 +189,9 @@
 
 @media (min-width: 960px) {
     
-    #cuerpo-internas {        
-        margin: 100px 0 0 0;        
-    }
+    // #cuerpo-internas {
+    //     margin: 100px 0 0 0;
+    // }
     .fila-centro_serv{
         max-width: none;
         border-bottom: 1px solid #ccc;
@@ -215,24 +216,44 @@
         margin: 0;
     }
     .direccion-centro{
-        font-size: 30px;
+        font-size: 22px;
     }
     .tels-centro{
         font-size: 18px;
     }
     .titulos-internas{
-        font-size: 40px;
+        font-size: 1.8em;
     }
     .cont-gen-titulos-internas{
         margin: 20px 2.5%;
     }
     .btn-ver-map {
-        
-        font-size: 41px;
+        font-size: 1.8em;
     }
     .btn-ver-map:before{
         width: 35px;
-        height: 47px;
-        
+        height: 47px;        
+    }
+    .cont-select-servicios {       
+        font-size: 21px;
+    }
+}
+
+@media (min-width: 1100px) {
+    
+    #cuerpo-internas {
+        margin: 100px 0 0 0;
+    }
+}
+
+@media (min-width: 1480px) {
+    .titulos-internas{
+        font-size: 40px;
+    }
+    .direccion-centro{
+        font-size: 30px;
+    }
+    .btn-ver-map {
+        font-size: 41px;
     }
 }

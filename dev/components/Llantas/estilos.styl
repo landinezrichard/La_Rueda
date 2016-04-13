@@ -1,5 +1,7 @@
 /*LLANTAS*/
 .Llantas
+	display inline-block
+	width 100%	
 	&-imageContainer
 		margin 0
 		text-align center
@@ -13,13 +15,15 @@
 		overflow visible
 	&-titleContainer
 		display inline-block
-		margin-bottom 20px
+		// margin-bottom 20px
+		margin 80px 0 30px
 	&-title
 		color $dark_gray5
 		font-weight 400
-		font-size 2.56em
-		margin 2.5em 0 .3em
-		line-height 1rem
+		font-size 1.8em
+		// margin 2.5em 0 .3em
+		// line-height 1rem
+		margin 0
 	&-borde
 		width 245px
 		height 3px
@@ -111,13 +115,13 @@
 	&-aside
 		display inline-block
 		float left
-		
+	/*Lineas Producto*/	
 	&-LineasTitleContainer
 			display inline-block
 			width 100%
 		&-LineasTitle
 			font-weight 400
-			font-size 2em
+			font-size 1.8em
 			margin .5em 0 0
 		&-LineasTitleborde
 			display inline-block
@@ -165,10 +169,7 @@
 		/*lineas prod*/	
 		&-Lineas
 			& a
-				width 80% !important
-		
-		&-LineasTitle			
-			font-size 2em
+				width 80% !important		
 		
 @media (min-width: 960px)
 	.Llantas
@@ -180,9 +181,11 @@
 		&-sobreIm
 			position absolute
 			top 3em
+		&-titleContainer		
+			margin 40px 0 30px
 		&-title
 			color $white		
-			margin 1em 0 .3em					
+			// margin 1em 0 .3em					
 			
 		&-containerLight
 			font-size 2.56em
@@ -195,11 +198,11 @@
 			
 /*Desktop*/
 @media (min-width: 1100px)
-	.Llantas
+	.Llantas		
 		&-sobreIm
 			top 120px
-		&-title
-			margin 2em 0 .3em
+		// &-title
+		// 	margin 2em 0 .3em
 		&-aside
 			display inline-block
 			position relative
@@ -222,8 +225,10 @@
 			margin 20px
 @media (min-width: 1496px)
 	.Llantas
-		&-sobreIm
-			height 532px
+		&-title
+			font-size 2.56em
+		// &-sobreIm
+		// 	height 532px
 		&-containerText
 			display inline-block
 			background-color $transparencia2
@@ -238,9 +243,10 @@
 		&-float
 			& .AsideMenu
 				// margin-top -410px
-				position relative
-				
+				position relative				
 		&-info
 			width auto
 			float left
 			padding 0
+		&-LineasTitle			
+			font-size 2em
