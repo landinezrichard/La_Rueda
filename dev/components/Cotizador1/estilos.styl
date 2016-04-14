@@ -1,7 +1,7 @@
 /*COTIZADOR1*/
 
 .Cotizador1
-	margin 100px 0 !important
+	// margin 100px 0 !important
 	&-item
 		background-color #f2f2f2
 		width 100%
@@ -22,7 +22,7 @@
 		margin 0 1em
 	&-itemTitle
 		font-weight 400
-		font-size 2em
+		font-size 1.5em
 		margin .5em 0
 	&-itemMarca
 		font-weight 400
@@ -38,7 +38,7 @@
 	&-itemCantext
 	&-input
 		font-weight 400
-		font-size 1.62em
+		font-size 1.4em
 	&-input
 		margin .7em 10px
 	&-eliminar
@@ -46,7 +46,7 @@
 		max-width 200px
 	&-eliminarButton
 		font-weight 400
-		font-size 2.01em
+		font-size 1.4em
 		color $dark_red2
 		display inline-block
 		margin .5em
@@ -86,23 +86,23 @@
 
 	&-mensaje
 		font-weight 400
-		font-size 2.01em
+		font-size 1.44em
 
 	&-volver2
 		font-weight 700
-		font-size 2.01em
+		font-size 1.8em
 		color $white
 		background-color $yellow
 		width 320px
 		padding 0 .5em 0 0
-		margin-right 25px
+		// margin-right 25px
 	&-actions
 		display inline-block
 		width 100%
 
 	&-actionsText
 		font-weight 700
-		font-size 28px
+		font-size 1.6em
 		width 100%
 		display inline-block
 
@@ -112,23 +112,23 @@
 
 	&-cotizar
 		font-weight 700
-		font-size 2.01em
+		// font-size 2.01em
+		font-size 1.4em
 		color $white
 		background-color $yellow
-		width 217px
-		padding 0 .5em
+		// width 217px
+		width 70%
+		max-width 217px
+		// padding 0 .5em
+		padding 7px 0
 		display inline-block
-		box-sizing border-box
-
-	// &-actionsButtons
-	// 	display inline-block
-	// 	width 100%
-	// 	margin 1em 0
+		box-sizing border-box	
 
 	&-button
 		display inline-block
 		font-weight 700
-		font-size 2.01em
+		// font-size 2.01em
+		font-size 1.4em
 		color $white
 		background-color black
 		width 70%
@@ -170,9 +170,7 @@
 		&-itemCantidad
 			float left
 		&-eliminar
-			float right
-		// &-actions
-		// 	float right
+			float right		
 		&-volver
 			width 410px
 
@@ -186,3 +184,22 @@
 			width 20%
 		&-button
 			width 23%
+@media (min-width: 1480px)
+	.Cotizador1		
+		&-mensaje
+			font-size 2.01em
+		&-volver2
+			font-size 2.01em
+			
+		/*item cotizador*/
+		&-itemTitle
+			font-size 2em
+		&-itemCantext
+		&-input
+			font-size 1.62em
+		&-eliminarButton
+			font-size 2.01em
+		&-actionsText
+			font-size 28px
+		&-button
+			font-size 2.01em

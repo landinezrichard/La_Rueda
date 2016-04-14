@@ -13,7 +13,8 @@
     background: #efefef;
     box-sizing: border-box;
     padding: 10px 2.5%;
-    font-size: 30px;
+    // font-size: 30px;
+    font-size: 1.7em;
     text-transform: uppercase;
 }
 #cont_cent_serv_contacto:before{
@@ -66,9 +67,7 @@
 
 @media (min-width: 1100px){
 
-    #cont_conoce_centros {
-        margin: 80px 0;
-    }
+    
     #cont_cent_serv_contacto:before{width:100px;
         content: "";
     }
@@ -77,13 +76,26 @@
     }
     #cont_cent_serv_contacto {
         height: 124px;
-        font-size: 30px;
-        text-align: left;
+        // font-size: 30px;
+        // text-align: left;
     }
     
     #cont_selec_cent_contacto {
         height: 124px;
         padding: 35px 2.5%;
         margin: 0 0 20px 0;
+    }
+}
+
+@media (min-width: 1480px){
+
+    #cont_conoce_centros {
+        // margin: 80px 0;
+         margin: 40px 0;
+    }
+    
+    #cont_cent_serv_contacto {        
+        font-size: 30px;
+        text-align: left;
     }
 }
