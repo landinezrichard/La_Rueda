@@ -53,6 +53,26 @@ $(document).ready(function() {
 		pagination: false
 	});
 
+	/*Carrusel Logos nueva int-llantas*/
+	$(".Intllantas-logos").owlCarousel({
+		itemsCustom:[
+			[0,2],[481,3],[550,4],[1050,5],
+		],
+		navigation:true,
+		autoPlay:8000,
+		pagination:false,
+	});
+
+	/*Carrusel Caracteristicas nueva int-llantas*/
+	$(".Intllantas-carList").owlCarousel({
+		itemsCustom:[
+			[0,2],[481,3],[550,5],[1050,8],
+		],
+		navigation:true,
+		autoPlay:8000,
+		pagination:false,
+	});
+
 	
 
 	/*Paginación jPaginate*/
@@ -111,6 +131,16 @@ $(document).ready(function() {
 	    $('.cont_gen_servicios').removeClass('selec');
 	    $('#cont_camion').addClass('selec');
 	});
+
+	// var owl=$("#carrusel_medios_pago");
+	// owl.owlCarousel({
+	// 	itemsCustom:[
+	// 		[0,2],[481,3],[550,5],[1050,9],
+	// 	],
+	// 	navigation:true,
+	// 	autoPlay:8000,
+	// 	pagination:false,
+	// });
 
 	/*Modificar los controles del Owl*/
 	$.each($('.owl-prev'),function(elemento){

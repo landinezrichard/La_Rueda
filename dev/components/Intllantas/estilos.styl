@@ -1,0 +1,169 @@
+/*INTERNA LLANTAS NUEVA*/
+
+.Intllantas
+	width 90%
+	margin .5em 5%
+	display inline-block
+	box-sizing border-box
+	border 1px solid $light_gray
+	
+	&-der
+		display inline-block
+		vertical-align top
+		width 100%
+		box-sizing border-box
+		position relative
+		
+	&-izq
+		display inline-block
+		box-sizing border-box
+		vertical-align top
+		color $dark_gray4
+		text-align left
+		width 100%
+		// margin 1em 2.5%
+		padding 1em 2.5%		
+		background #f3f3f3
+		border-right 1px solid $light_gray
+		
+	&-des
+	&-title
+	&-txt
+	&-carTitle
+		font-size 1.2em
+	
+	&-carTxt
+		font-size .85em
+		margin 0
+		
+	&-des
+		color $dark_gray4
+		text-align left		
+		font-weight 400
+		text-align left
+	&-title
+		color black
+		font-weight 700
+		margin 0
+		text-align left		
+	&-txt
+		color $dark_gray4
+		font-weight 300		
+		text-align left
+		margin 0
+		
+	&-caract
+		display inline-block
+		width 100%
+		background transparent
+	&-carTitle
+		text-align left
+		margin .5em 2.5%
+		color $dark_black2
+		font-weight 700		
+		
+	&-carList
+		display inline-block
+		width 100%
+		margin 0
+		background black
+		color $white
+		text-align center
+	&-carItem
+		display inline-block
+		max-width 130px
+		vertical-align top
+		margin 1em 1.5%
+		cursor pointer
+		box-sizing border-box
+		&:hover
+			border-bottom 3px solid $yellow
+			.Intllantas-carTxt
+				color $yellow
+			
+	&-medio
+		margin 20px 0 15px
+		
+/*Controles Owl*/
+
+.Intllantas-carList .owl-prev
+.Intllantas-carList .owl-next
+	color $yellow
+	font-size 2em
+		
+.Intllantas-carList .owl-prev
+	position absolute
+	left 0
+	bottom 40%
+
+.Intllantas-carList .owl-next
+	position absolute
+	right 0
+	bottom 40%
+	
+/*Carrusel logos*/
+.Intllantas-logos.owl-prev
+.Intllantas-logos.owl-next
+	color $yellow
+	font-size 2em
+		
+.Intllantas-logos.owl-prev
+	position absolute
+	left 0
+	bottom 40%
+
+.Intllantas-logos.owl-next
+	position absolute
+	right 0
+	bottom 40%
+			
+@media (min-width: 720px)
+	.Intllantas
+		&-izq
+		&-der
+			min-height 440px
+
+		&-izq
+			width 60%
+			float left
+		&-der
+			width 40%
+			float right
+		&-des
+		&-title
+		&-txt
+		&-carTitle
+			font-size 1.4em
+		&-carTxt
+			font-size .95em
+		&-caract
+			float left
+			margin-top -70px
+		&-medio
+			margin 35px 0 25px
+			
+		&-logos
+			margin-bottom 40px
+			
+@media (min-width: 960px)
+	.Intllantas
+		&-izq
+		&-der
+			min-height 500px
+		&-des
+		&-title
+		&-txt
+		&-carTitle			
+			font-size 1.56em
+		&-carTxt
+			font-size 1em
+
+@media (min-width: 1280px)
+	.Intllantas
+		&-izq
+		&-der
+			min-height 585px
+		&-medio
+			margin 85px 0 55px
+
+// @media (min-width: 1440px)
