@@ -1,4 +1,6 @@
 /*FILTROLLANTAS (Buscador)*/
+.select
+	clear both
 
 .select
 .select--linea
@@ -45,6 +47,7 @@
 		padding .2em .5em
 		font-weight 300
 		
+		
 		& option
 			font-weight 300
 	&-option
@@ -76,6 +79,28 @@
 	&-buttonIcon
 		font-size 1em
 		
+	&-tipoContainer
+		display inline-block
+		margin 0 auto
+		width 85%
+		
+	&-tipo
+		cursor pointer
+		display inline-block
+		color $white
+		font-weight 300
+		font-size 1.37em
+		margin 1em 0 .4em
+		&:first-child
+			float left			
+		&:nth-child(2)
+			float right			
+			
+		& .icon-chevron-thin-right
+			font-size .7em
+			vertical-align middle
+	&-tipoSelected
+		color $yellow
 @media (min-width: 600px)
 	.select--linea
 		display inline-block
